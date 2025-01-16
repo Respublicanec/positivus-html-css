@@ -1,0 +1,10 @@
+.menu {
+  width: 2.4rem;
+  display: none;
+  margin-left: auto;
+  z-index: 2;
+
+  @media all and (max-width: $media-m) {
+    display: block;
+    }
+  }

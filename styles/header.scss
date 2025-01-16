@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  @media all and (max-width: $media-m) {
+    padding: 0 2rem;
+  }
+}

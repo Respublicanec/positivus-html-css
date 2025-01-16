@@ -4,24 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <div class="page">
     <header class="header">
-      <img src="./logo.png" alt="" class="logo">
-      <nav class="active">
-        <a href="">About us</a>
-        <a href="">Services</a>
-        <a href="">Use Cases</a>
-        <a href="">Pricing</a>
-        <a href="">Blog</a>
+      <img src="./logo.png" alt="" class="logo logo_header">
+      <nav class="nav nav_header nav_active">
+        <a class="nav__link" href="">About us</a>
+        <a class="nav__link" href="">Services</a>
+        <a class="nav__link" href="">Use Cases</a>
+        <a class="nav__link" href="">Pricing</a>
+        <a class="nav__link" href="">Blog</a>
       </nav>
-      <button>Request a quote</button>
+      <button class="btn btn_header btn_outline">Request a quote</button>
       <div class="menu">
-        <img src="./menu.png" alt="">
+        <img class="menu__icon" src="./menu.png" alt="">
       </div>
     </header>
+
+    <div class="icon icon_plus"></div>
+    <div class="icon icon_minus"></div>
   </div>
 </body>
 </html>

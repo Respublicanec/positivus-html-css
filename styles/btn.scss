@@ -1,0 +1,68 @@
+.btn {
+  border-radius: 1.4rem;
+  padding: 2rem 3.5rem;
+  font-size: $size-btn;
+  color: $color-dark;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline-width: 0;
+
+  @media all and (max-width: $media-m) {
+    width: 100%;
+  }
+
+  @media (hover: hover) {
+    transition: all 0.3s ease-out;
+
+    &:hover,
+    &:active {
+      transition: all 0.3s ease-in;
+    }
+  }
+
+  &_primary {
+   color: $color-white;
+   background-color: $color-dark;
+
+   @media (hover: hover) {
+    &:hover,
+    &:active {
+      color: $color-black;
+      background-color: $color-green;
+    }
+  }
+  }
+
+  &_secondary {
+    background-color: $color-green;
+
+    @media (hover: hover) {
+      &:hover,
+      &:active {
+        color: $color-white;
+        background-color: $color-dark;
+      }
+  }
+}
+
+  &_outline {
+    border: 1px solid $color-dark;
+  
+    @media (hover: hover) {
+      &:hover,
+      &:active {
+        color: $color-white;
+        background-color: $color-dark;
+      }
+  }
+  }
+
+  &_header {
+    margin-left: 4rem;
+
+    @media all and (max-width: $media-m) {
+      display: none;
+    }
+  }
+}
