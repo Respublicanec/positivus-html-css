@@ -14,7 +14,7 @@
 
 html {
   font-size: 10px;
-  font-famili: "Space Grotesk";
+  font-family: "Space Grotesk";
 }
 
 body {
@@ -31,6 +31,79 @@ body {
   flex-direction: column;
   width: 100%;
   max-width: 124rem;
+  padding-top: 6rem;
+}
+@media all and (max-width: 1200px) {
+  .page {
+    padding-top: 3rem;
+  }
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Space Grotesk";
+  font-weight: 500;
+  margin: 0;
+}
+
+h1 {
+  font-size: 6rem;
+}
+@media all and (max-width: 500px) {
+  h1 {
+    font-size: 4.3rem;
+  }
+}
+
+h2 {
+  font-size: 4rem;
+}
+@media all and (max-width: 500px) {
+  h2 {
+    font-size: 3.6rem;
+  }
+}
+
+h3 {
+  font-size: 3rem;
+}
+@media all and (max-width: 500px) {
+  h3 {
+    font-size: 2.6rem;
+  }
+}
+
+h4 {
+  font-size: 2rem;
+}
+@media all and (max-width: 500px) {
+  h4 {
+    font-size: 1.8rem;
+  }
+}
+
+p {
+  font-size: 1.8rem;
+}
+@media all and (max-width: 500px) {
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+.partners {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem 5rem;
+  width: 100%;
+}
+@media all and (max-width: 1200px) {
+  .partners {
+    column-gap: 3rem;
+  }
+}
+.partners img {
+  filter: grayscale(100);
 }
 
 .header {
@@ -267,6 +340,77 @@ body {
 }
 .link_icon_green .link__icon {
   fill: #b9ff66;
+}
+
+.heading apan {
+  display: inline-block;
+  border-radius: 0.7rem;
+}
+.heading_bg_white span {
+  background-color: #ffffff;
+}
+.heading_bg_green span {
+  background-color: #b9ff66;
+}
+.heading_bg_black span {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 7rem 0;
+}
+@media all and (max-width: 1200px) {
+  .section {
+    padding: 0 2 rem;
+    margin: 3rem 0;
+  }
+}
+.section_first {
+  position: relative;
+}
+.section_first .section__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 53rem;
+  margin-bottom: 10.5rem;
+  row-gap: 3.5rem;
+}
+@media all and (max-width: 1200px) {
+  .section_first .section__container {
+    margin: 0 auto 6rem;
+    max-width: 100rem;
+  }
+}
+@media all and (max-width: 500px) {
+  .section_first .section__container {
+    row-gap: 1rem;
+  }
+}
+@media all and (max-width: 500px) {
+  .section_first p {
+    margin-bottom: 3rem;
+  }
+}
+.section__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media all and (max-width: 1200px) {
+  .section__img {
+    position: relative;
+    width: 100%;
+    max-width: 60rem;
+  }
+}
+@media all and (max-width: 500px) {
+  .section__img {
+    margin-bottom: 1rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
