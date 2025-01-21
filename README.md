@@ -1,5 +1,10 @@
 # positivus-html-css
 
-## Подключение компилятора SCSS
+
+
+## Подключение 
+
+Запуск через расширение Live Server 
 
 sass --watch styles/index.scss:styles.css
+
