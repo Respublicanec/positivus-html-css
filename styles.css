@@ -83,6 +83,7 @@ h4 {
 
 p {
   font-size: 1.8rem;
+  margin: 0;
 }
 @media all and (max-width: 500px) {
   p {
@@ -411,6 +412,53 @@ p {
   .section__img {
     margin-bottom: 1rem;
   }
+}
+.section__header {
+  display: flex;
+  column-gap: 4rem;
+  max-width: 80rem;
+  margin-bottom: 8rem;
+}
+@media all and (max-width: 1200px) {
+  .section__header {
+    flex-direction: column;
+    row-gap: 3rem;
+    margin: 0 auto 4rem;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.card_service {
+  border-radius: 4.5rem;
+  border: 1px solid #191a23;
+  box-shadow: 0 5px 0 0 #191a23;
+  padding: 5rem;
+  width: 100%;
+  max-width: 60rem;
+  min-height: 31rem;
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "title img" "link img";
+}
+.card_service .link {
+  grid-area: link;
+  margin-top: auto;
+}
+.card_service .card__img {
+  grid-area: img;
+  margin-top: auto 0 auto auto;
+}
+.card_service .heaing {
+  grid-area: title;
+}
+.card_service_bg_dark {
+  background-color: #191a23;
+}
+.card_service_bg_green {
+  background-color: #b9ff66;
 }
 
 /*# sourceMappingURL=styles.css.map */

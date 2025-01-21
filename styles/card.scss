@@ -1,0 +1,45 @@
+.card {
+  &_service {
+    border-radius: 4.5rem;
+    border: 1px solid $color-dark;
+    box-shadow: 0 5px 0 0 $color-dark;
+
+    padding: 5rem;
+
+    width: 100%;
+    max-width: 60rem;
+    min-height: 31rem;
+
+    background-color: $color-grey;
+
+    display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  grid-template-areas: "title img" "link img";
+
+   .link {
+    grid-area: link;
+    margin-top: auto;
+   }
+
+   .card__img {
+    grid-area: img;
+    margin-top: auto 0 auto auto;
+   }
+
+   .heaing {
+    grid-area: title
+   }
+
+   &_bg {
+    &_dark {
+      background-color: $color-dark;
+    }
+    &_green {
+      background-color: $color-green;
+    }
+   }
+  }
+}
