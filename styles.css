@@ -396,6 +396,18 @@ p {
     margin-bottom: 3rem;
   }
 }
+.section_second .section__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 12rem;
+}
+@media all and (max-width: 1200px) {
+  .section_second .section__cards {
+    margin-bottom: 7rem;
+    grid-template-columns: repeat(auto-fit, minmax(39rem, 1fr));
+  }
+}
 .section__img {
   position: absolute;
   top: 0;
@@ -451,13 +463,13 @@ p {
   grid-area: img;
   margin-top: auto 0 auto auto;
 }
-.card_service .heaing {
+.card_service .heading {
   grid-area: title;
 }
-.card_service_bg_dark {
+.card_bg_dark {
   background-color: #191a23;
 }
-.card_service_bg_green {
+.card_bg_green {
   background-color: #b9ff66;
 }
 

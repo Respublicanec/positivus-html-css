@@ -29,9 +29,10 @@
     margin-top: auto 0 auto auto;
    }
 
-   .heaing {
+   .heading {
     grid-area: title
    }
+  }
 
    &_bg {
     &_dark {
@@ -42,4 +43,3 @@
     }
    }
   }
-}
