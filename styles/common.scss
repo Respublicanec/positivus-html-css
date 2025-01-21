@@ -4,7 +4,7 @@
 
 html {
   font-size: 10px;
-  font-famili: $font-family
+  font-family: $font-family
 }
 
 body {
@@ -21,4 +21,72 @@ body {
   flex-direction: column;
   width: 100%;
   max-width: 124rem;
+  padding-top: 6rem;
+
+  @media all and (max-width: $media-m) {
+    padding-top: 3rem;
+  }
+}
+
+h1, h2 ,h3, h4, h5 {
+  font-family: $font-family;
+  font-weight: $weight-medium;
+  margin: 0;
+}
+
+h1 {
+  font-size: $size-h1;
+
+  @media all and (max-width: $media-s) {
+    font-size: $size-h1-mob;
+  }
+}
+
+h2 {
+  font-size: $size-h2;
+
+  @media all and (max-width: $media-s) {
+    font-size: $size-h2-mob;
+  }
+}
+
+h3 {
+  font-size: $size-h3;
+
+  @media all and (max-width: $media-s) {
+    font-size: $size-h3-mob;
+  }
+}
+
+h4 {
+  font-size: $size-h4;
+
+  @media all and (max-width: $media-s) {
+    font-size: $size-h4-mob;
+  }
+}
+
+p {
+  font-size: $size-p;
+  margin: 0;
+
+  @media all and (max-width: $media-s) {
+    font-size: $size-p-mob;
+  }
+}
+
+.partners {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem 5rem;
+  width: 100%;
+
+  @media all and (max-width: $media-m) {
+    column-gap: 3rem;    
+  }
+
+  img {
+   filter: grayscale(100);
+  }
 }
