@@ -1,6 +1,6 @@
 .card {
   &_service {
-    border-radius: 4.5rem;
+    border-radius: $radius-card;
     border: 1px solid $color-dark;
     box-shadow: 0 5px 0 0 $color-dark;
 
@@ -19,14 +19,31 @@
 
   grid-template-areas: "title img" "link img";
 
+  @media all and (max-width: $media-m) {
+    grid-template-areas: "title title" "link img";
+    grid-template-rows: auto;
+    max-width: 100%;
+    row-gap: 3rem;
+  }
+
    .link {
     grid-area: link;
     margin-top: auto;
+
+    &__text {
+      @media all and (max-width: $media-m) {
+        display: none;
+      }
+    }
    }
 
    .card__img {
     grid-area: img;
     margin-top: auto 0 auto auto;
+
+    @media all and (max-width: $media-m) {
+      max-width: 16.5rem;
+    }
    }
 
    .heading {
@@ -40,6 +57,37 @@
     }
     &_green {
       background-color: $color-green;
+    }
+   }
+
+   &_proposal {
+    display: grid;
+    grid-template-columns: 50rem;
+    justify-items: flex-start;
+    
+    width: 100%;
+    padding: 6rem;
+    position: relative;
+
+    background-color: $color-grey;
+    border-radius: $radius-card;
+    row-gap: 2.6rem;
+
+    @media all and (max-width: $media-m) {
+      grid-template-columns: 1fr;
+      padding: 5rem;
+      row-gap: 2rem;
+    }
+
+    img {
+      position: absolute;
+      top: 50%;
+      right: 13.5rem;
+      transform: translateY(-50%);
+      
+      @media all and (max-width: $media-m) {
+        display: none;
+      }
     }
    }
   }
