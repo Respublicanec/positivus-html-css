@@ -5,9 +5,10 @@
   flex-direction: column;
   width: 100%;
   margin: 7rem 0;
+  
 
   @media all and (max-width: $media-m) {
-    padding: 0 2 rem;
+    padding: 0 2rem;
     margin: 3rem 0;
     }
 
@@ -62,6 +63,7 @@
     @media all and (max-width: $media-m) {
       margin-bottom: 7rem;
       gap: 3rem;
+
     }
   }
 
@@ -80,14 +82,6 @@
       margin-bottom: 1rem;
     }
   }
-
-  &_first-block {
-    white-space: nowrap; 
-  }
-
-  &_second-block {
-    width: 80rem;
-  } 
 
   &__header {
     display: flex;

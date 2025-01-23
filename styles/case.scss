@@ -10,6 +10,7 @@
   @media all and (max-width: $media-m) {
     row-gap: 3rem; 
     overflow-x: auto;   
+    background-color: $color-white;
   }
   }
 
@@ -25,13 +26,23 @@
     padding: 0 6.5rem;
     margin: 6rem 0 ;
     gap: 1rem;
-    
 
-    
+    @media all and (max-width: $media-m) {
+      background-color: $color-dark;
+      border-radius: 4rem;
+      padding: 5rem;
+      min-width: 36rem;
+      margin: 1rem;
+    }
+
   }
+
   &_block:not(:last-child) {
-    border-right: 1px solid white;
-    
-    
-  }
+  border-right: 1px solid white;
+
+  @media all and (max-width: $media-m) {
+        border-right: none;
+        
+  } 
 } 
+}
