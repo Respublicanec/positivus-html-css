@@ -54,6 +54,17 @@
     }
   }
 
+  &_three {
+    display: grid;
+    gap: 4rem; 
+    margin-bottom: 12rem; 
+
+    @media all and (max-width: $media-m) {
+      margin-bottom: 7rem;
+      gap: 3rem;
+    }
+  }
+
   &__img {
     position: absolute;
     top: 0;
@@ -70,11 +81,20 @@
     }
   }
 
+  &_first-block {
+    white-space: nowrap; 
+  }
+
+  &_second-block {
+    width: 80rem;
+  } 
+
   &__header {
     display: flex;
     column-gap: 4rem;
     max-width: 80rem;
     margin-bottom: 8rem;
+    
 
     @media all and (max-width: $media-m) {
       flex-direction: column;

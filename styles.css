@@ -410,6 +410,17 @@ p {
     gap: 3rem;
   }
 }
+.section_three {
+  display: grid;
+  gap: 4rem;
+  margin-bottom: 12rem;
+}
+@media all and (max-width: 1300px) {
+  .section_three {
+    margin-bottom: 7rem;
+    gap: 3rem;
+  }
+}
 .section__img {
   position: absolute;
   top: 0;
@@ -426,6 +437,12 @@ p {
   .section__img {
     margin-bottom: 1rem;
   }
+}
+.section_first-block {
+  white-space: nowrap;
+}
+.section_second-block {
+  width: 80rem;
 }
 .section__header {
   display: flex;
@@ -520,6 +537,33 @@ p {
   .card_proposal img {
     display: none;
   }
+}
+
+.case_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #191a23;
+  border-radius: 4rem;
+  min-height: 31rem;
+}
+@media all and (max-width: 1300px) {
+  .case_container {
+    row-gap: 3rem;
+    overflow-x: auto;
+  }
+}
+.case_bg_white {
+  color: #ffffff;
+}
+.case_block {
+  display: grid;
+  margin: 5rem 0;
+  padding: 0 6.5rem;
+  margin: 6rem 0;
+  gap: 1rem;
+}
+.case_block:not(:last-child) {
+  border-right: 1px solid white;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,37 @@
+.case {
+  &_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: $color-dark;
+  border-radius: 4rem;
+  min-height: 31rem;
+ 
+
+  @media all and (max-width: $media-m) {
+    row-gap: 3rem; 
+    overflow-x: auto;   
+  }
+  }
+
+  &_bg {
+    &_white {
+      color: $color-white;
+    } 
+  }
+
+  &_block {
+    display: grid;
+    margin: 5rem 0;
+    padding: 0 6.5rem;
+    margin: 6rem 0 ;
+    gap: 1rem;
+    
+
+    
+  }
+  &_block:not(:last-child) {
+    border-right: 1px solid white;
+    
+    
+  }
+} 
