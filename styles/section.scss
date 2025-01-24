@@ -67,6 +67,18 @@
     }
   }
 
+  &_four {
+    display: grid;
+    gap: 4rem; 
+    margin-bottom: 12rem; 
+
+    @media all and (max-width: $media-m) {
+      margin-bottom: 7rem;
+      gap: 3rem;
+
+    }
+  }
+
   &__img {
     position: absolute;
     top: 0;

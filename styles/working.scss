@@ -1,0 +1,79 @@
+.working{
+  &_card {
+    margin: 0;
+  }
+  &_container {
+    width: 100%;
+    display: grid;
+    gap: 2.3rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  &_block {
+    border: 1px solid $color-dark;
+    border-radius: 3rem;
+    counter-increment: item;
+    box-shadow:  $color-black 0px 3px 0px 0px; 
+    cursor: pointer; 
+
+    @media all and (max-width: $media-m) {
+      border-top: none;
+   
+    }
+    
+    }
+
+    &_header {
+      display: flex;
+      justify-content: space-between;
+      padding: 4rem;
+      font-size: $size-h3; 
+      align-items: center;
+
+      @media all and (max-width: $media-m) {
+      font-size: $size-h4; 
+      padding: 2rem;  
+      }
+    }
+
+    
+  &_kontent {
+    display: none;
+    font-size: $size-p;
+    margin: 0 4rem 0 4rem;
+    padding: 3rem 0 4rem 0;
+    border-top: 1px solid $color-dark;  
+    }
+
+    &_container li {
+      display: flex;
+      align-items: flex-start; 
+      margin-bottom: 1rem; 
+      width: 80%;
+  }
+
+  &_container li::before{
+    content: counter(item, decimal-leading-zero) " ";
+    color: $color-dark;    
+    font-weight: bold;
+    font-size: 4rem;
+    padding-right: 1.5rem; 
+    
+
+    @media all and (max-width: $media-m) {
+      font-size: $size-h4; 
+      font-weight: 600;
+    }
+
+  }
+
+  &_bg {
+    &_dark {
+      background-color: $color-white;
+    }
+    &_green {
+      background-color: $color-green;
+    }
+   }
+}
