@@ -398,37 +398,33 @@ p {
     margin-bottom: 3rem;
   }
 }
-.section_second .section__cards {
+.section_card .section__cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   margin-bottom: 12rem;
 }
 @media all and (max-width: 1300px) {
-  .section_second .section__cards {
+  .section_card .section__cards {
     margin-bottom: 7rem;
     grid-template-columns: repeat(auto-fit, minmax(39rem, 1fr));
     gap: 3rem;
   }
 }
-.section_three {
-  display: grid;
-  gap: 4rem;
-  margin-bottom: 12rem;
+.section_case {
+  margin: 4rem 0 4rem 0;
 }
 @media all and (max-width: 1300px) {
-  .section_three {
+  .section_case {
     margin-bottom: 7rem;
     gap: 3rem;
   }
 }
-.section_four {
-  display: grid;
-  gap: 4rem;
-  margin-bottom: 12rem;
+.section_working {
+  margin: 4rem 0 4rem 0;
 }
 @media all and (max-width: 1300px) {
-  .section_four {
+  .section_working {
     margin-bottom: 7rem;
     gap: 3rem;
   }
@@ -587,19 +583,18 @@ p {
   }
 }
 
-.working_card {
-  margin: 0;
-}
 .working_container {
-  width: 100%;
   display: grid;
-  gap: 2.3rem;
-  list-style: none;
+  gap: 2rem;
+  width: 100%;
   padding: 0;
 }
 .working_block {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  align-items: center;
   border: 1px solid #191a23;
-  border-radius: 3rem;
+  border-radius: 5rem;
   counter-increment: item;
   box-shadow: #000000 0px 3px 0px 0px;
   cursor: pointer;
@@ -612,40 +607,36 @@ p {
 .working_header {
   display: flex;
   justify-content: space-between;
-  padding: 4rem;
+  padding: 5rem;
   font-size: 3rem;
   align-items: center;
 }
 @media all and (max-width: 1300px) {
   .working_header {
-    font-size: 2rem;
-    padding: 2rem;
+    font-size: 1.6rem;
+    padding: 3rem;
   }
 }
-.working_kontent {
+.working_content {
+  grid-column: 1/-1;
   display: none;
   font-size: 1.8rem;
   margin: 0 4rem 0 4rem;
   padding: 3rem 0 4rem 0;
   border-top: 1px solid #191a23;
 }
-.working_container li {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 1rem;
-  width: 80%;
-}
 .working_container li::before {
   content: counter(item, decimal-leading-zero) " ";
+  padding: 0 4rem;
   color: #191a23;
   font-weight: bold;
   font-size: 4rem;
-  padding-right: 1.5rem;
 }
 @media all and (max-width: 1300px) {
   .working_container li::before {
-    font-size: 2rem;
+    font-size: 2.6rem;
     font-weight: 600;
+    padding: 0 2.5rem;
   }
 }
 .working_bg_dark {

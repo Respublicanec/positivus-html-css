@@ -1,71 +1,61 @@
-.working{
-  &_card {
-    margin: 0;
-  }
+.working{ 
   &_container {
+    display: grid;   
+    gap: 2rem;
     width: 100%;
-    display: grid;
-    gap: 2.3rem;
-    list-style: none;
-    padding: 0;
+    padding: 0;    
   }
   
-  &_block {
+  &_block {    
+    display: grid;   
+    grid-template-columns: 5rem 1fr;
+    align-items: center; 
     border: 1px solid $color-dark;
-    border-radius: 3rem;
+    border-radius: 5rem;
     counter-increment: item;
     box-shadow:  $color-black 0px 3px 0px 0px; 
-    cursor: pointer; 
+    cursor: pointer;     
 
     @media all and (max-width: $media-m) {
-      border-top: none;
-   
-    }
-    
-    }
+      border-top: none;               
+    }    
+  }
 
-    &_header {
-      display: flex;
+  &_header {
+      display: flex;      
       justify-content: space-between;
-      padding: 4rem;
+      padding: 5rem;
       font-size: $size-h3; 
       align-items: center;
 
       @media all and (max-width: $media-m) {
-      font-size: $size-h4; 
-      padding: 2rem;  
+      font-size: $size-p-mob; 
+      padding:  3rem;     
       }
-    }
-
-    
-  &_kontent {
+   }
+       
+  &_content {
+    grid-column: 1 / -1;
     display: none;
     font-size: $size-p;
     margin: 0 4rem 0 4rem;
     padding: 3rem 0 4rem 0;
     border-top: 1px solid $color-dark;  
-    }
+    }  
 
-    &_container li {
-      display: flex;
-      align-items: flex-start; 
-      margin-bottom: 1rem; 
-      width: 80%;
-  }
-
-  &_container li::before{
+  &_container li::before{      
     content: counter(item, decimal-leading-zero) " ";
+    padding: 0 4rem;
     color: $color-dark;    
     font-weight: bold;
-    font-size: 4rem;
-    padding-right: 1.5rem; 
-    
+    font-size: 4rem;    
 
     @media all and (max-width: $media-m) {
-      font-size: $size-h4; 
+      font-size: $size-h3-mob; 
       font-weight: 600;
+      padding: 0 2.5rem;
+   
     }
-
   }
 
   &_bg {

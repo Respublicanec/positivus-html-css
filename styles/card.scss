@@ -14,12 +14,12 @@
 
     display: grid;
 
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 
-  grid-template-areas: "title img" "link img";
+    grid-template-areas: "title img" "link img";
 
-  @media all and (max-width: $media-m) {
+    @media all and (max-width: $media-m) {
     grid-template-areas: "title title" "link img";
     grid-template-rows: auto;
     max-width: 100%;

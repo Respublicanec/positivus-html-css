@@ -40,7 +40,7 @@
     }
   }
 
-  &_second {
+  &_card {
     #{$this}__cards {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -55,10 +55,9 @@
     }
   }
 
-  &_three {
-    display: grid;
-    gap: 4rem; 
-    margin-bottom: 12rem; 
+  &_case {
+     
+    margin: 4rem 0 4rem 0; 
 
     @media all and (max-width: $media-m) {
       margin-bottom: 7rem;
@@ -67,10 +66,8 @@
     }
   }
 
-  &_four {
-    display: grid;
-    gap: 4rem; 
-    margin-bottom: 12rem; 
+  &_working { 
+    margin: 4rem 0 4rem 0; 
 
     @media all and (max-width: $media-m) {
       margin-bottom: 7rem;

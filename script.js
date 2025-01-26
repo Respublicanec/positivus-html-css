@@ -2,7 +2,7 @@ const toggles = document.querySelectorAll('.working_block');
 
 toggles.forEach(function(toggle) {
   toggle.addEventListener('click', function() {
-        const content = toggle.querySelector('.working_kontent');
+        const content = toggle.querySelector('.working_content');
         if (content.style.display === 'none' || content.style.display === '') {
             content.style.display = 'block';
         } else {
