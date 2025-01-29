@@ -14,7 +14,7 @@
     border-radius: 5rem;
     counter-increment: item;
     box-shadow:  $color-black 0px 3px 0px 0px; 
-    cursor: pointer;     
+    cursor: pointer;      
 
     @media all and (max-width: $media-m) {
       border-top: none;               
@@ -35,12 +35,20 @@
    }
        
   &_content {
-    grid-column: 1 / -1;
-    display: none;
-    font-size: $size-p;
+    grid-column: 1 / -1;     
+    max-height: 0; 
+    overflow: hidden;
+    font-size: $size-p;    
+    padding: 0;
     margin: 0 4rem 0 4rem;
-    padding: 3rem 0 4rem 0;
-    border-top: 1px solid $color-dark;  
+     
+    transition: max-height 0.3s ease, padding 0.3s ease;
+   
+    &_open {
+      max-height: 20rem; 
+      padding: 3rem 0 4rem 0; 
+      border-top: 1px solid $color-dark;    
+    }
     }  
 
   &_container li::before{      
@@ -49,6 +57,7 @@
     color: $color-dark;    
     font-weight: bold;
     font-size: 4rem;    
+       
 
     @media all and (max-width: $media-m) {
       font-size: $size-h3-mob; 

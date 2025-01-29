@@ -39,7 +39,7 @@
 
    .card__img {
     grid-area: img;
-    margin-top: auto 0 auto auto;
+    margin-top: auto 0 auto auto;    
 
     @media all and (max-width: $media-m) {
       max-width: 16.5rem;
