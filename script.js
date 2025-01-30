@@ -1,14 +1,14 @@
 const toggles = document.querySelectorAll('.working_block');
 
-toggles.forEach(function(toggle) {
-  toggle.addEventListener('click', function() {
-        const content = this.querySelector('.working_content');
+toggles.forEach(toggle =>{
+  toggle.addEventListener('click', () => {
+        const content = toggle.querySelector('.working_content');
         if (content.classList.contains('working_content_open')) {
           content.classList.remove('working_content_open');
       } else if (content.classList.contains('working_content')) {
           content.classList.add('working_content_open');
       }  
-        const bgColor = this;
+        const bgColor = toggle;
         if (bgColor.classList.contains('working_bg_dark')) {
             bgColor.classList.remove('working_bg_dark');
             bgColor.classList.add('working_bg_green');
@@ -27,11 +27,11 @@ toggles.forEach(function(toggle) {
     });
 });
 
- document.getElementById('menu').addEventListener('click', function() {
+ document.getElementById('menu').addEventListener('click', () => {
    document.getElementById('nav-header').style.transform = 'none';
   });
 
-  document.getElementById('team-all').addEventListener('click', function() {
+  document.getElementById('team-all').addEventListener('click', () => {
     const teamContainers = document.querySelectorAll('.team_card');
     const button = document.getElementById('team-all');
 

@@ -448,6 +448,15 @@ p {
     margin-bottom: 1rem;
   }
 }
+.section_testimonials {
+  margin: 4rem 0 4rem 0;
+}
+@media all and (max-width: 1300px) {
+  .section_testimonials {
+    margin-bottom: 7rem;
+    gap: 3rem;
+  }
+}
 .section__header {
   display: flex;
   column-gap: 4rem;
@@ -733,7 +742,7 @@ p {
   clip-path: path("M 20 0 Q 0 0, 0 20 Q 0 40, 14 50 Q 0 70, 0 80 Q 0 99, 20 98 Q 40 98, 50 84 Q 60 98, 78 98 Q 98 98, 98 78 Q 98 60, 84 50 Q 98 40, 98 20 Q 98 0, 78 0 Q 60 0, 50 14 Q 40 0, 20 0Z");
   background-color: black;
 }
-.team_all {
+.team_wrapper_btn {
   padding-top: 3rem;
   text-align: end;
 }

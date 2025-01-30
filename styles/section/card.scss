@@ -3,22 +3,15 @@
     border-radius: $radius-card;
     border: 1px solid $color-dark;
     box-shadow: 0 5px 0 0 $color-dark;
-
     padding: 5rem;
-
     width: 100%;
     max-width: 60rem;
     min-height: 31rem;
-
     background-color: $color-grey;
-
     display: grid;
-
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-
     grid-template-areas: "title img" "link img";
-
     @media all and (max-width: $media-m) {
     grid-template-areas: "title title" "link img";
     grid-template-rows: auto;
