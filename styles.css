@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Space grotesk";
   src: url("/assets/fonts/SpaceGrotesk-Regular.ttf");
@@ -317,7 +318,7 @@ p {
 .link__icon {
   width: 2rem;
   height: 2rem;
-  fill: #191a23;
+  fill: #ffffff;
 }
 .link_round .link__decor {
   width: 4.1rem;
@@ -447,9 +448,6 @@ p {
   .section__img {
     margin-bottom: 1rem;
   }
-}
-.section_testimonials {
-  margin: 4rem 0 4rem 0;
 }
 @media all and (max-width: 1300px) {
   .section_testimonials {
@@ -745,6 +743,76 @@ p {
 .team_wrapper_btn {
   padding-top: 3rem;
   text-align: end;
+}
+
+.icon-container {
+  display: flex; /* Используем flexbox для горизонтального выравнивания */
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center; /* Центрируем по вертикали */
+  height: 100px; /* Высота контейнера */
+}
+
+.icon {
+  width: 50px; /* Ширина иконки */
+  height: 50px; /* Высота иконки */
+  background-image: url("pointer.svg"); /* Устанавливаем фоновое изображение */
+  background-size: contain; /* Масштабируем изображение */
+  background-repeat: no-repeat; /* Не повторяем изображение */
+}
+
+.flipped {
+  transform: scaleX(-1); /* Поворачиваем на 180 градусов по оси X */
+}
+
+.testimonials_container {
+  background-color: #191a23;
+  width: 100%;
+  height: auto;
+}
+.testimonials_top-block {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+.testimonials_lower-block {
+  display: flex;
+  white-space: nowrap;
+  text-align: center;
+  color: #ffffff;
+  height: 400px;
+}
+.testimonials_card {
+  padding: 10rem 3rem;
+  min-width: 60rem;
+}
+.testimonials_content {
+  position: relative;
+  max-width: 600px;
+  border: 1px solid #b9ff66;
+  padding: 3rem;
+  border-radius: 4rem;
+}
+.testimonials_content::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  bottom: -2.1rem;
+  left: 8rem;
+  background: #191a23;
+  border-left: 1px solid #b9ff66;
+  border-bottom: 1px solid #b9ff66;
+  transform: rotate(-45deg);
+  border-radius: 1px;
+}
+.testimonials_text {
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
+.testimonials_author {
+  padding: 5rem 9rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

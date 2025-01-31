@@ -1,0 +1,94 @@
+.icon-container {
+  display: flex; /* Используем flexbox для горизонтального выравнивания */
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center; /* Центрируем по вертикали */
+  height: 100px; /* Высота контейнера */
+}
+
+.icon {
+  width: 50px; /* Ширина иконки */
+  height: 50px; /* Высота иконки */
+  background-image: url('pointer.svg'); /* Устанавливаем фоновое изображение */
+  background-size: contain; /* Масштабируем изображение */
+  background-repeat: no-repeat; /* Не повторяем изображение */
+}
+
+.flipped {
+  transform: scaleX(-1); /* Поворачиваем на 180 градусов по оси X */
+}
+
+.testimonials {
+  &_container {      
+    background-color: $color-dark;
+    width: 100%; 
+    height: auto;       
+  }
+
+  &_top-block{
+    display: flex;  
+    justify-content: space-between;  
+    overflow-x: auto;
+  }
+
+  &_lower-block{    
+    display: flex; 
+    white-space: nowrap;
+    text-align: center;
+    color: $color-white; 
+    height: 400px;
+  }
+
+  &_card {
+    padding: 10rem 3rem; 
+    min-width: 60rem;
+  }
+
+  &_content {
+    position: relative;   
+    max-width: 600px;
+    border: 1px solid $color-green;
+    padding: 3rem;
+    border-radius: 4rem;
+    
+    
+  }
+
+  &_content::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    bottom: -2.1rem;
+    left: 8rem;
+    background: $color-dark;
+    border-left: 1px solid $color-green;
+    border-bottom: 1px solid $color-green;
+    transform: rotate(-45deg);
+    border-radius: 1px;    
+  }
+
+  &_text {  
+    color: $color-white; 
+    text-align: center; 
+    padding: 10px;  
+  
+}
+  &_author {
+    padding: 5rem 9rem;
+  }
+
+  &_icon-right{  
+  }
+
+
+  &_icon-left {  
+   
+  }
+
+  &_icon-left2 {  
+   
+  }
+
+} 
+ 
