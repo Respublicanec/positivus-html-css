@@ -35,7 +35,7 @@
     white-space: nowrap;
     text-align: center;
     color: $color-white; 
-    height: 400px;
+    
   }
 
   &_card {
@@ -79,16 +79,16 @@
   }
 
   &_icon-right{  
+    width: 30px;
+    height: 30px;
+    
   }
 
-
-  &_icon-left {  
-   
-  }
-
-  &_icon-left2 {  
-   
-  }
+  &_icon-left {    
+    width: 30px;
+    height: 30px; 
+    transform: scale(-1);
+  }   
 
 } 
  
