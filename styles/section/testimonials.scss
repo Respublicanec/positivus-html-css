@@ -1,72 +1,39 @@
-.icon-container {
-  display: flex; /* Используем flexbox для горизонтального выравнивания */
-  justify-content: center; /* Центрируем по горизонтали */
-  align-items: center; /* Центрируем по вертикали */
-  height: 100px; /* Высота контейнера */
-}
-
-.icon {
-  width: 50px; /* Ширина иконки */
-  height: 50px; /* Высота иконки */
-  background-image: url('pointer.svg'); /* Устанавливаем фоновое изображение */
-  background-size: contain; /* Масштабируем изображение */
-  background-repeat: no-repeat; /* Не повторяем изображение */
-}
-
-.flipped {
-  transform: scaleX(-1); /* Поворачиваем на 180 градусов по оси X */
-}
-
 .testimonials {
-  &_container {      
-    background-color: $color-dark;
-    width: 100%; 
-    height: auto;       
-  }
+  &_container {    
+    display: flex;  
+    flex-direction: column;     
+    overflow: hidden;   
+    width: 100%;     
+    border-radius: 4rem;        
+  }   
 
   &_top-block{
-    display: flex;  
-    justify-content: space-between;  
-    overflow-x: auto;
+    display: flex;    
+    width: 100%; 
+    background-color: $color-dark;
   }
 
   &_lower-block{    
-    display: flex; 
+    display: s; 
     white-space: nowrap;
-    text-align: center;
-    color: $color-white; 
-    
+    padding-bottom: 5rem;    
+    align-items: center;
+    justify-content: center;
+    background-color: $color-dark;    
   }
 
-  &_card {
-    padding: 10rem 3rem; 
-    min-width: 60rem;
+  &_card {            
+    max-width: 70rem;    
+    padding: 5rem;
   }
 
   &_content {
-    position: relative;   
-    max-width: 600px;
+    position: relative;      
     border: 1px solid $color-green;
-    padding: 3rem;
-    border-radius: 4rem;
-    
-    
+    padding: 4rem;
+    border-radius: 4rem;    
   }
 
-  &_content::after{
-    content: '';
-    display: block;
-    position: absolute;
-    width: 4rem;
-    height: 4rem;
-    bottom: -2.1rem;
-    left: 8rem;
-    background: $color-dark;
-    border-left: 1px solid $color-green;
-    border-bottom: 1px solid $color-green;
-    transform: rotate(-45deg);
-    border-radius: 1px;    
-  }
 
   &_text {  
     color: $color-white; 
@@ -76,19 +43,31 @@
 }
   &_author {
     padding: 5rem 9rem;
-  }
+  }  
 
   &_icon-right{  
-    width: 30px;
-    height: 30px;
-    
+    color: $color-white; 
+    margin: 2rem 20rem;
+    width: 3rem;
+    height: 3rem; 
   }
 
-  &_icon-left {    
-    width: 30px;
-    height: 30px; 
+  &_icon-left { 
+    color: $color-white;  
+    margin: 2rem 20rem;
+    width: 3rem;
+    height: 3rem; 
     transform: scale(-1);
-  }   
+  } 
 
+  &_goToCard {   
+    color: $color-white;   
+    margin: 1.5rem;
+    width: 20px;
+    height: 20px;
+  }
+
+  &_goToCard:hover, &_icon-left:hover, &_icon-right:hover{   
+    color: $color-green;
+  }
 } 
- 
