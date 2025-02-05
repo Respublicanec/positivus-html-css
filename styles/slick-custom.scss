@@ -1,32 +1,57 @@
-.slick-dots {
-  content: url('/assets/icons/vector.svg#vector'); 
-  width: 30px;  
-  bottom: 8%; 
-  color: #60c564;
-}
-.slick-next{ 
-  top: 90%; 
-  left: 80%;
-  color: #c11d1d;
-  
-}
-
-.slick-next:before {
-  color: #c11d1d;
-  content: url('/assets/icons/arrowright.svg#pointer');  
-  
-}
-
-.slick-prev { 
-  color: #c11d1d;
+.slick-prev {
+  position: static;
+  margin: 0 20rem;
+  width: 3rem;
   transform: scale(-1);
-  top: 88%; 
-  left: 20%;  
+
+  @media all and (max-width: $media-m) {
+    margin: 0;
+  }
 }
 
-.slick-prev:before {
-  content: url('/assets/icons/arrowright.svg#pointer"');
-  color: #c11d1d;
+.slick-next {
+  position: static;
+  margin: 0.5rem 20rem 0 20rem;
+  width: 3rem;
+
+  @media all and (max-width: $media-m) {
+    margin: 0.5rem 0 0 0;
+  }
 }
 
+.slick-list {
+  height: auto;
+}
 
+.slick-arrow:before {
+  display: none;
+}
+
+.dots-container {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-dots {
+  position: static;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  color: $color-white;
+  white-space: nowrap;
+}
+
+.slick-dots li {
+  width: 1.5rem;
+  margin: 1rem;
+}
+
+.slick-active {
+  color: $color-green;
+}
+
+.slick-dotted {
+  margin-bottom: 0 !important;
+}
