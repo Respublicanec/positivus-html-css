@@ -209,6 +209,17 @@ p {
 .btn_wide-side {
   padding: 2rem 7rem;
 }
+.btn_max-wide {
+  width: 100%;
+  color: #ffffff;
+  background-color: #191a23;
+}
+@media (hover: hover) {
+  .btn_max-wide:hover, .btn_max-wide:active {
+    color: #000000;
+    background-color: #b9ff66;
+  }
+}
 .btn_secondary {
   background-color: #b9ff66;
 }
@@ -454,10 +465,18 @@ p {
     gap: 3rem;
   }
 }
+.section_contact {
+  width: 100%;
+}
+@media all and (max-width: 1300px) {
+  .section_contact {
+    max-width: none;
+  }
+}
 .section__header {
   display: flex;
   column-gap: 4rem;
-  max-width: 80rem;
+  max-width: 75rem;
   margin-bottom: 8rem;
 }
 @media all and (max-width: 1300px) {
@@ -860,6 +879,95 @@ p {
 
 .slick-dotted {
   margin-bottom: 0 !important;
+}
+
+.contact_container {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 4rem;
+}
+.contact_options-block {
+  display: flex;
+  gap: 3rem;
+}
+.contact_options-varian {
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  align-items: center;
+}
+.contact_options-input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  position: relative;
+}
+.contact_options-input:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #b9ff66;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact_block-feedback {
+  display: grid;
+  padding: 8rem;
+}
+.contact_form_header {
+  padding: 3rem 0 1rem 0;
+}
+.contact_form-name {
+  width: 100%;
+}
+.contact_form-name_input {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+.contact_form-email {
+  width: 100%;
+}
+.contact_form-email_input {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+.contact_form-message {
+  width: 100%;
+}
+.contact_form-message_input {
+  width: 100%;
+  min-height: 17rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  font-family: "Space Grotesk";
+  border: 1px solid black;
+}
+.contact_form-btn {
+  padding-top: 5rem;
+}
+.contact_block-illustration {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 5rem;
+  overflow: hidden;
+}
+.contact_illustration {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  height: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
