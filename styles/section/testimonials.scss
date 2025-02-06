@@ -1,0 +1,64 @@
+.testimonials {
+  &_container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 4rem;
+  }
+
+  &_top-block {
+    display: flex;
+    width: 100%;
+    background-color: $color-dark;
+    overflow: hidden;
+  }
+
+  &_lower-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-dark;
+    padding: 5rem;
+
+    @media all and (max-width: $media-m) {
+      justify-content: space-between;
+    }
+  }
+
+  &_card {
+    width: 80%;
+    padding: 8rem 4rem 0rem 4rem;
+  }
+
+  &_content {
+    position: relative;
+    border: 1px solid $color-green;
+    padding: 4rem;
+    border-radius: 4rem;
+  }
+
+  &_content::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    bottom: -2.1rem;
+    left: 8rem;
+    background-color: $color-dark;
+    border-left: 1px solid $color-green;
+    border-bottom: 1px solid $color-green;
+    transform: rotate(-45deg);
+    border-radius: 3px;
+  }
+
+  &_text {
+    color: $color-white;
+    text-align: center;
+    padding: 10px;
+  }
+  &_author {
+    padding: 5rem 9rem;
+  }
+}

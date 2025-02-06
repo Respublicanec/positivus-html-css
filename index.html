@@ -1,535 +1,731 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-  <div class="page">
-    <header class="header"> 
-      <img src="./logo.png" alt="" class="logo logo_header">
-      <nav id="nav-header"class="nav nav_header">
-        <a class="nav__link" href="">About us</a>
-        <a class="nav__link" href="">Services</a>
-        <a class="nav__link" href="">Use Cases</a>
-        <a class="nav__link" href="">Pricing</a>
-        <a class="nav__link" href="">Blog</a>
-      </nav>
-      <button class="btn btn_header btn_outline">Request a quote</button>
-      <div class="menu" id="menu">
-        <img class="menu__icon" src="./menu.png" alt="">
-      </div>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img src="./logo.png" alt="" class="logo logo_header" />
+        <nav id="nav-header" class="nav nav_header">
+          <a class="nav__link" href="">About us</a>
+          <a class="nav__link" href="">Services</a>
+          <a class="nav__link" href="">Use Cases</a>
+          <a class="nav__link" href="">Pricing</a>
+          <a class="nav__link" href="">Blog</a>
+        </nav>
+        <button class="btn btn_header btn_outline">Request a quote</button>
+        <div class="menu" id="menu">
+          <img class="menu__icon" src="./menu.png" alt="" />
+        </div>
+      </header>
 
-    <section class="section section_first">
-      <div class="section__container">
-        <h1>Navigating the digital landscape for success</h1>
-        <img src="/assets/img/Illustration.svg" alt="" class="section__img">
-        <p>
-          Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.
-        </p>
-        <button class="btn btn_primary">
-          Book a consultation
-        </button>
-      </div>
+      <section class="section section_first">
+        <div class="section__container">
+          <h1>Navigating the digital landscape for success</h1>
+          <img src="/assets/img/Illustration.svg" alt="" class="section__img" />
+          <p>
+            Our digital marketing agency helps businesses grow and succeed
+            online through a range of services including SEO, PPC, social media
+            marketing, and content creation.
+          </p>
+          <button class="btn btn_primary">Book a consultation</button>
+        </div>
 
-      <div class="partners">
-        <img src="/assets/icons/CompanyLogo.svg" alt="">
-        <img src="/assets/icons//CompanyLogo-1.svg" alt="">
-        <img src="/assets/icons//CompanyLogo-2.svg" alt="">
-        <img src="/assets/icons//CompanyLogo-3.svg" alt="">
-        <img src="/assets/icons//CompanyLogo-4.svg" alt="">
-        <img src="/assets/icons//CompanyLogo-5.svg" alt="">
-      </div>
-    </section>
+        <div class="partners">
+          <img src="/assets/icons/CompanyLogo.svg" alt="" />
+          <img src="/assets/icons//CompanyLogo-1.svg" alt="" />
+          <img src="/assets/icons//CompanyLogo-2.svg" alt="" />
+          <img src="/assets/icons//CompanyLogo-3.svg" alt="" />
+          <img src="/assets/icons//CompanyLogo-4.svg" alt="" />
+          <img src="/assets/icons//CompanyLogo-5.svg" alt="" />
+        </div>
+      </section>
 
-    <section class="section section_card">
-      <div class="section__header">
-        <h2 class="heading heading_bg_green">
-          <span>Services </span>
-        </h2>
-        <p> At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:    
-        </p>
-      </div>
+      <section class="section section_card">
+        <div class="section__header">
+          <h2 class="heading heading_bg_green">
+            <span>Services </span>
+          </h2>
+          <p>
+            At our digital marketing agency, we offer a range of services to
+            help businesses grow and succeed online. These services include:
+          </p>
+        </div>
 
-      <div class="section__cards">
-        <div class="card card_service">
-          <h3 class="heading heading_bg_green">
-            <span>
-              Search engine
-            </span>
-            <span>
-              optimization
-            </span>
-          </h3>
-          <a href="" class="link link_round link_icon_green">
-            <span class="link__decor">
+        <div class="section__cards">
+          <div class="card card_service">
+            <h3 class="heading heading_bg_green">
+              <span> Search engine </span>
+              <span> optimization </span>
+            </h3>
+            <a href="" class="link link_round link_icon_green">
+              <span class="link__decor">
+                <svg class="link__icon">
+                  <use xlink:href="/assets/icons/sprite.svg#arrow" />
+                </svg>
+              </span>
+              <span class="link__text">Learn more</span>
+            </a>
+            <img
+              src="/assets/img/tokyo-magnifier-web-search-with-elements2.png"
+              srcset="
+                /assets/img/tokyo-magnifier-web-search-with-elements2@2x.png 2x
+              "
+              alt=""
+              class="card__img"
+            />
+          </div>
+
+          <div class="card card_service card_bg_green">
+            <h3 class="heading heading_bg_white">
+              <span> Pay-per-click </span>
+              <span> advertising </span>
+            </h3>
+            <a href="" class="link link_round link_icon_green">
+              <span class="link__decor">
+                <svg class="link__icon">
+                  <use xlink:href="/assets/icons/sprite.svg#arrow" />
+                </svg>
+              </span>
+              <span class="link__text">Learn more</span>
+            </a>
+            <img
+              src="/assets/img/tokyo-selecting-a-value-in-the-browser-window1.png"
+              srcset="
+                /assets/img/tokyo-selecting-a-value-in-the-browser-window1@2x.png 2x
+              "
+              alt=""
+              class="card__img"
+            />
+          </div>
+
+          <div class="card card_service card_bg_dark">
+            <h3 class="heading heading_bg_white">
+              <span> Social Media </span>
+              <span> Marketing </span>
+            </h3>
+            <a href="" class="link link_round link_icon_green link_color_white">
+              <span class="link__decor link__decor_white">
+                <svg class="link__icon">
+                  <use xlink:href="/assets/icons/sprite.svg#arrow" />
+                </svg>
+              </span>
+              <span class="link__text">Learn more</span>
+            </a>
+            <img
+              src="/assets/img/tokyo-browser-window-with-emoticon-likes-and-stars-around2.png"
+              srcset="
+                /assets/img/tokyo-browser-window-with-emoticon-likes-and-stars-around2@2x.png 2x
+              "
+              alt=""
+              class="card__img"
+            />
+          </div>
+
+          <div class="card card_service">
+            <h3 class="heading heading_bg_green">
+              <span> Email </span>
+              <span> Marketing </span>
+            </h3>
+            <a href="" class="link link_round link_icon_green">
+              <span class="link__decor">
+                <svg class="link__icon">
+                  <use xlink:href="/assets/icons/sprite.svg#arrow" />
+                </svg>
+              </span>
+              <span class="link__text">Learn more</span>
+            </a>
+            <img
+              src="/assets/img/tokyo-sending-messages-from-one-place-to-another1.png"
+              srcset="
+                /assets/img/tokyo-sending-messages-from-one-place-to-another1@2x.png 2x
+              "
+              alt=""
+              class="card__img"
+            />
+          </div>
+
+          <div class="card card_service card_bg_green">
+            <h3 class="heading heading_bg_white">
+              <span> Content </span>
+              <span> Creation </span>
+            </h3>
+            <a href="" class="link link_round link_icon_green">
+              <span class="link__decor">
+                <svg class="link__icon">
+                  <use xlink:href="/assets/icons/sprite.svg#arrow" />
+                </svg>
+              </span>
+              <span class="link__text">Learn more</span>
+            </a>
+            <img
+              src="/assets/img/tokyo-many-browser-windows-with-different-information1.png"
+              srcset="
+                /assets/img/tokyo-many-browser-windows-with-different-information1@2x.png 2x
+              "
+              alt=""
+              class="card__img"
+            />
+          </div>
+
+          <div class="card card_service card_bg_dark">
+            <h3 class="heading heading_bg_white">
+              <span> Analytics and </span>
+              <span> Tracking </span>
+            </h3>
+            <a href="" class="link link_round link_icon_green link_color_white">
+              <span class="link__decor link__decor_white">
+                <svg class="link__icon">
+                  <use xlink:href="/assets/icons/sprite.svg#arrow" />
+                </svg>
+              </span>
+              <span class="link__text">Learn more</span>
+            </a>
+            <img
+              src="/assets/img/tokyo-volumetric-analytics-of-different-types-in-web-browsers2.png"
+              srcset="
+                /assets/img/tokyo-volumetric-analytics-of-different-types-in-web-browsers2@2x.png 2x
+              "
+              alt=""
+              class="card__img"
+            />
+          </div>
+        </div>
+        <div class="card card_proposal">
+          <h3>Lets's make things happen</h3>
+          <p>
+            Contact us today to learn more about how our digital marketing
+            services can help your business grow and succeed online.
+          </p>
+          <button class="btn btn_primary">Get your free proposal</button>
+          <img src="assets/img/Illustration-1.svg" alt="" />
+        </div>
+      </section>
+
+      <section class="section section_case">
+        <div class="section__header">
+          <h2 class="heading heading_bg_green">
+            <span>Case Studies</span>
+          </h2>
+          <p>
+            Explore Real-Life Examples of Our Proven Digital Marketing Success
+            through Our Case Studies
+          </p>
+        </div>
+
+        <div class="case case_container case_bg_white">
+          <div class="case_block">
+            <p>
+              For a local restaurant, we implemented a targeted PPC campaign
+              that resulted in a 50% increase in website traffic and a 25%
+              increase in sales.
+            </p>
+            <a href="" class="link link_color_green link_icon_green">
+              <span> Learn more </span>
               <svg class="link__icon">
-                <use xlink:href="/assets/icons/sprite.svg#arrow"/>
+                <use
+                  class="link_icon_green"
+                  xlink:href="/assets/icons/sprite.svg#arrow"
+                />
               </svg>
-            </span>
-            <span class="link__text">Learn more</span>
-          </a>
-          <img src="/assets/img/tokyo-magnifier-web-search-with-elements2.png"
-          srcset="/assets/img/tokyo-magnifier-web-search-with-elements2@2x.png 2x"
-          alt=""
-          class="card__img"
-          />
-      </div>
-
-      <div class="card card_service card_bg_green">
-        <h3 class="heading heading_bg_white">
-          <span>
-            Pay-per-click
-          </span>
-          <span>
-            advertising
-          </span>
-        </h3>
-        <a href="" class="link link_round link_icon_green">
-          <span class="link__decor">
-            <svg class="link__icon">
-              <use xlink:href="/assets/icons/sprite.svg#arrow"/>
-            </svg>
-          </span>
-          <span class="link__text">Learn more</span>
-        </a>
-        <img src="/assets/img/tokyo-selecting-a-value-in-the-browser-window1.png"
-        srcset="/assets/img/tokyo-selecting-a-value-in-the-browser-window1@2x.png 2x"
-        alt=""
-        class="card__img"
-        />
-    </div>
-
-    <div class="card card_service card_bg_dark">
-      <h3 class="heading heading_bg_white">
-        <span>
-          Social Media
-        </span>
-        <span>
-          Marketing
-        </span>
-      </h3>
-      <a href="" class="link link_round link_icon_green link_color_white">
-        <span class="link__decor link__decor_white">
-          <svg class="link__icon">
-            <use xlink:href="/assets/icons/sprite.svg#arrow"/>
-          </svg>
-        </span>
-        <span class="link__text">Learn more</span>
-      </a>
-      <img src="/assets/img/tokyo-browser-window-with-emoticon-likes-and-stars-around2.png"
-      srcset="/assets/img/tokyo-browser-window-with-emoticon-likes-and-stars-around2@2x.png 2x"
-      alt=""
-      class="card__img"
-      />
-  </div>
-
-   <div class="card card_service">
-          <h3 class="heading heading_bg_green">
-            <span>
-              Email
-            </span>
-            <span>
-              Marketing
-            </span>
-          </h3>
-          <a href="" class="link link_round link_icon_green">
-            <span class="link__decor">
+            </a>
+          </div>
+          <div class="case_block">
+            <p>
+              For a B2B software company, we developed an SEO strategy that
+              resulted in a first page ranking for key keywords and a 200%
+              increase in organic traffic.
+            </p>
+            <a class="link link_color_green link_icon_green" href="">
+              <span> Learn more </span>
               <svg class="link__icon">
-                <use xlink:href="/assets/icons/sprite.svg#arrow"/>
+                <use xlink:href="/assets/icons/sprite.svg#arrow" />
               </svg>
-            </span>
-            <span class="link__text">Learn more</span>
-          </a>
-          <img src="/assets/img/tokyo-sending-messages-from-one-place-to-another1.png"
-          srcset="/assets/img/tokyo-sending-messages-from-one-place-to-another1@2x.png 2x"
-          alt=""
-          class="card__img"
-          />
-      </div>
-
-      <div class="card card_service card_bg_green">
-        <h3 class="heading heading_bg_white">
-          <span>
-            Content
-          </span>
-          <span>
-            Creation
-          </span>
-        </h3>
-        <a href="" class="link link_round link_icon_green">
-          <span class="link__decor">
-            <svg class="link__icon">
-              <use xlink:href="/assets/icons/sprite.svg#arrow"/>
-            </svg>
-          </span>
-          <span class="link__text">Learn more</span>
-        </a>
-        <img src="/assets/img/tokyo-many-browser-windows-with-different-information1.png"
-        srcset="/assets/img/tokyo-many-browser-windows-with-different-information1@2x.png 2x"
-        alt=""
-        class="card__img"
-        />
-    </div>
-
-    <div class="card card_service card_bg_dark">
-      <h3 class="heading heading_bg_white">
-        <span>
-          Analytics and
-        </span>
-        <span>
-          Tracking
-        </span>
-      </h3>
-      <a href="" class="link link_round link_icon_green link_color_white">
-        <span class="link__decor link__decor_white">
-          <svg class="link__icon">
-            <use xlink:href="/assets/icons/sprite.svg#arrow"/>
-          </svg>
-        </span>
-        <span class="link__text">Learn more</span>
-      </a>
-      <img src="/assets/img/tokyo-volumetric-analytics-of-different-types-in-web-browsers2.png"
-      srcset="/assets/img/tokyo-volumetric-analytics-of-different-types-in-web-browsers2@2x.png 2x"
-      alt=""
-      class="card__img"
-      />
-     </div> 
-
-      </div>
-      <div class="card card_proposal">
-        <h3>Lets's make things happen</h3>
-        <p>Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
-        <button class="btn btn_primary">Get your free proposal</button>
-        <img src="assets/img/Illustration-1.svg" alt="">
-      </div>
-    </section>
-
-   <section class="section section_case">
-      <div class="section__header">
-        <h2 class="heading heading_bg_green">
-          <span>Case Studies</span>
-        </h2>
-        <p>
-          Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies
-        </p>
-      </div>
-
-      
-      <div class="case case_container case_bg_white">
-        <div class="case_block">
-          <p>
-            For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.
-          </p>
-          <a href="" class="link link_color_green  link_icon_green">
-            <span>
-              Learn more
-            </span>
-            <svg class="link__icon">
-              <use class="link_icon_green" xlink:href="/assets/icons/sprite.svg#arrow"/>
-            </svg>
-          </a>
+            </a>
+          </div>
+          <div class="case_block">
+            <p>
+              For a national retail chain, we created a social media marketing
+              campaign that increased followers by 25% and generated a 20%
+              increase in online sales.
+            </p>
+            <a class="link link_color_green link_icon_green" href="">
+              <span> Learn more </span>
+              <svg class="link__icon">
+                <use xlink:href="/assets/icons/sprite.svg#arrow" />
+              </svg>
+            </a>
+          </div>
         </div>
-        <div class="case_block">
-          <p>
-            For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.
-          </p>
-          <a class="link link_color_green  link_icon_green" href="">
-            <span>
-              Learn more
-            </span>
-            <svg class="link__icon">
-              <use xlink:href="/assets/icons/sprite.svg#arrow"/>
-            </svg>
-          </a>
-        </div>
-        <div class="case_block">
-          <p>
-            For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.
-          </p>
-          <a class="link link_color_green  link_icon_green" href="">
-            <span >
-              Learn more
-            </span>
-            <svg class="link__icon ">
-              <use xlink:href="/assets/icons/sprite.svg#arrow"/>
-            </svg>
-          </a>
-          
-        </div>
-        
-      </div>
-     
-    </section>
+      </section>
 
-    <section class="section section_working">
-      <div class="section__header">
-        <h2 class="heading heading_bg_green">
-          <span>Our Working Process</span>
-        </h2>
-        <p>
-          Step-by-Step Guide to Achieving Your Business Goals
-        </p>
-      </div>
-    
+      <section class="section section_working">
+        <div class="section__header">
+          <h2 class="heading heading_bg_green">
+            <span>Our Working Process</span>
+          </h2>
+          <p>Step-by-Step Guide to Achieving Your Business Goals</p>
+        </div>
+
         <ol class="working working_container">
-
-          <li id="working_1" class=" working_block working_bg_dark">
+          <li id="working_1" class="working_block working_bg_dark">
             <div class="working_header">
-               <span >
-                Consultation
-               </span>
-               <div class="icon_plus">        
-               </div>
+              <span> Consultation </span>
+              <div class="icon_plus"></div>
             </div>
-            <div class="working_content ">
-                <span >
-                    During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.
-                </span>
+            <div class="working_content">
+              <span>
+                During the initial consultation, we will discuss your business
+                goals and objectives, target audience, and current marketing
+                efforts. This will allow us to understand your needs and tailor
+                our services to best fit your requirements.
+              </span>
             </div>
           </li>
 
-        <li class="working_block working_bg_dark">
-          <div class="working_header">
-            <div>
-            Research and Strategy Development                      
+          <li class="working_block working_bg_dark">
+            <div class="working_header">
+              <div>Research and Strategy Development</div>
+              <div class="icon_plus"></div>
             </div>
-            <div class="icon_plus">              
+            <div class="working_content">
+              <span>
+                In this phase, we conduct thorough research to identify market
+                trends, competitors, and customer preferences. Based on this
+                data, we develop a comprehensive strategy that aligns with your
+                business objectives.
+              </span>
             </div>
-          </div>
-        <div class="working_content">
-          <span >
-          In this phase, we conduct thorough research to identify market trends, competitors, and customer preferences. Based on this data, we develop a comprehensive strategy that aligns with your business objectives.
-          </span>  
-        </div> 
-      </li>
+          </li>
 
-      <li class="working_block working_bg_dark ">
-        <div class="working_header">
-          <div>
-            Implementation                     
-          </div>
-          <div class="icon_plus">              
-          </div>
-        </div>
-      <div class="working_content">
-        <span >
-          Our team will execute the strategy by implementing the necessary actions, including marketing campaigns, content creation, and resource allocation, ensuring everything is in line with your goals.
-        </span>  
-      </div> 
-    </li>
-
-    <li class="working_block working_bg_dark">
-      <div class="working_header">
-        <div>
-          Monitoring and Optimization                     
-        </div>
-        <div class="icon_plus">              
-        </div>
-      </div>
-    <div class="working_content">
-      <span >
-        We continuously monitor the performance of our strategies and make data-driven adjustments to optimize results. This ensures that your business remains agile and responsive to changes in the market.
-      </span>  
-    </div> 
-  </li>
-
-  <li class="working_block working_bg_dark">
-    <div class="working_header">
-      <div>
-        Reporting and Communication                   
-      </div>
-      <div class="icon_plus">              
-      </div>
-    </div>
-  <div class="working_content">
-    <span >
-      Regular reports will be provided to keep you informed about progress and results. We believe in transparent communication to ensure you are always aware of how your business is performing.
-    </span>  
-  </div> 
-</li>
-
-<li class="working_block working_bg_dark">
-  <div class="working_header">
-    <div>
-      Continual Improvement                     
-    </div>
-    <div class="icon_plus">              
-    </div>
-  </div>
-<div class="working_content">
-    <span >
-    We focus on continual improvement by analyzing outcomes, gathering feedback, and refining our strategies. This commitment helps us enhance your business performance over time.
-    </span>  
-   </div> 
-   </li>    
-         </ol>
-
-   
-    </section>
-
-    <section class="section section_team">
-      <div class="section__header">
-        <h2 class="heading heading_bg_green">
-          <span>
-            Team
-          </span>
-        </h2>
-        <p>
-          Meet the skilled and experienced team behind our successful digital marketing strategies
-        </p>
-      </div>
-
-      <div class="team team_container" id="team-container">
-        <div class="team team_card team_card_hidden">
-          <div class="team_card_header">
-            <div class="team_image-container">
-              <img src="/assets/img/ian-dooley-d1UPkiFd04A-unsplash1.jpg" srcset="/assets/img/ian-dooley-d1UPkiFd04A-unsplash1@2x.jpg 2x" alt="Image" class="team_image">
+          <li class="working_block working_bg_dark">
+            <div class="working_header">
+              <div>Implementation</div>
+              <div class="icon_plus"></div>
             </div>
-            <div class="team__profile-card">
-              <p class="team__name">
-                John Smith
-              </p>
-              <p>
-                CEO and Founder
-              </p>
+            <div class="working_content">
+              <span>
+                Our team will execute the strategy by implementing the necessary
+                actions, including marketing campaigns, content creation, and
+                resource allocation, ensuring everything is in line with your
+                goals.
+              </span>
             </div>
-            <img src="/assets/icons/Socialicon.svg" alt="" >
-          </div>
-          <p class="team_card_biography">
-            10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy
+          </li>
+
+          <li class="working_block working_bg_dark">
+            <div class="working_header">
+              <div>Monitoring and Optimization</div>
+              <div class="icon_plus"></div>
+            </div>
+            <div class="working_content">
+              <span>
+                We continuously monitor the performance of our strategies and
+                make data-driven adjustments to optimize results. This ensures
+                that your business remains agile and responsive to changes in
+                the market.
+              </span>
+            </div>
+          </li>
+
+          <li class="working_block working_bg_dark">
+            <div class="working_header">
+              <div>Reporting and Communication</div>
+              <div class="icon_plus"></div>
+            </div>
+            <div class="working_content">
+              <span>
+                Regular reports will be provided to keep you informed about
+                progress and results. We believe in transparent communication to
+                ensure you are always aware of how your business is performing.
+              </span>
+            </div>
+          </li>
+
+          <li class="working_block working_bg_dark">
+            <div class="working_header">
+              <div>Continual Improvement</div>
+              <div class="icon_plus"></div>
+            </div>
+            <div class="working_content">
+              <span>
+                We focus on continual improvement by analyzing outcomes,
+                gathering feedback, and refining our strategies. This commitment
+                helps us enhance your business performance over time.
+              </span>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section section_team">
+        <div class="section__header">
+          <h2 class="heading heading_bg_green">
+            <span> Team </span>
+          </h2>
+          <p>
+            Meet the skilled and experienced team behind our successful digital
+            marketing strategies
           </p>
         </div>
 
-        <div class="team team_card team_card_hidden">
-          <div class="team_card_header">
-            <div class="team_image-container">
-              <img src="/assets/img/suad-kamardeen-khewjy5l4Zo-unsplash2.jpg" srcset="/assets/img/suad-kamardeen-khewjy5l4Zo-unsplash2(1).jpg 2x" alt="Image" class="team_image">
+        <div class="team team_container" id="team-container">
+          <div class="team team_card team_card_hidden">
+            <div class="team_card_header">
+              <div class="team_image-container">
+                <img
+                  src="/assets/img/ian-dooley-d1UPkiFd04A-unsplash1.jpg"
+                  srcset="
+                    /assets/img/ian-dooley-d1UPkiFd04A-unsplash1@2x.jpg 2x
+                  "
+                  alt="Image"
+                  class="team_image"
+                />
+              </div>
+              <div class="team__profile-card">
+                <p class="team__name">John Smith</p>
+                <p>CEO and Founder</p>
+              </div>
+              <img src="/assets/icons/Socialicon.svg" alt="" />
             </div>
-            <div class="team__profile-card">
-              <p class="team__name">
-                Jane Doe
-              </p>
-              <p>
-                Director of Operations
-              </p>
-            </div>
-            <img src="/assets/icons/Socialicon.svg" alt="" >
+            <p class="team_card_biography">
+              10+ years of experience in digital marketing. Expertise in SEO,
+              PPC, and content strategy
+            </p>
           </div>
-          <p class="team_card_biography">
-            7+ years of experience in project management and team leadership. Strong organizational and communication skills
+
+          <div class="team team_card team_card_hidden">
+            <div class="team_card_header">
+              <div class="team_image-container">
+                <img
+                  src="/assets/img/suad-kamardeen-khewjy5l4Zo-unsplash2.jpg"
+                  srcset="
+                    /assets/img/suad-kamardeen-khewjy5l4Zo-unsplash2(1).jpg 2x
+                  "
+                  alt="Image"
+                  class="team_image"
+                />
+              </div>
+              <div class="team__profile-card">
+                <p class="team__name">Jane Doe</p>
+                <p>Director of Operations</p>
+              </div>
+              <img src="/assets/icons/Socialicon.svg" alt="" />
+            </div>
+            <p class="team_card_biography">
+              7+ years of experience in project management and team leadership.
+              Strong organizational and communication skills
+            </p>
+          </div>
+
+          <div class="team team_card team_card_hidden">
+            <div class="team_card_header">
+              <div class="team_image-container">
+                <img
+                  src="/assets/img/christian-buehner-DItYlc26zVI-unsplash1.jpg"
+                  srcset="
+                    /assets/img/christian-buehner-DItYlc26zVI-unsplash1@2x.jpg 2x
+                  "
+                  alt="Image"
+                  class="team_image"
+                />
+              </div>
+              <div class="team__profile-card">
+                <p class="team__name">Michael Brown</p>
+                <p>Senior SEO Specialist</p>
+              </div>
+              <img src="/assets/icons/Socialicon.svg" alt="" />
+            </div>
+            <p class="team_card_biography">
+              5+ years of experience in SEO and content creation. Proficient in
+              keyword research and on-page optimization
+            </p>
+          </div>
+
+          <div class="team team_card team_card_hidden">
+            <div class="team_card_header">
+              <div class="team_image-container">
+                <img
+                  src="/assets/img/feli-ramsanjami-agung-wUe_Q-t4-cI-unsplash1.jpg"
+                  srcset="
+                    /assets/img/feli-ramsanjami-agung-wUe_Q-t4-cI-unsplash1@2x.jpg 2x
+                  "
+                  alt="Image"
+                  class="team_image"
+                />
+              </div>
+              <div class="team__profile-card">
+                <p class="team__name">Emily Johnson</p>
+                <p>PPC Manager</p>
+              </div>
+              <img src="/assets/icons/Socialicon.svg" alt="" />
+            </div>
+            <p class="team_card_biography">
+              3+ years of experience in paid search advertising. Skilled in
+              campaign management and performance analysis
+            </p>
+          </div>
+
+          <div class="team team_card team_card_hidden">
+            <div class="team_card_header">
+              <div class="team_image-container">
+                <img
+                  src="/assets/img/chanvre-quebec-mXu1SpzHq6w-unsplash1.jpg"
+                  srcset="
+                    /assets/img/chanvre-quebec-mXu1SpzHq6w-unsplash1@2x.jpg 2x
+                  "
+                  alt="Image"
+                  class="team_image"
+                />
+              </div>
+              <div class="team__profile-card">
+                <p class="team__name">Brian Williams</p>
+                <p>Social Media Specialist</p>
+              </div>
+              <img src="/assets/icons/Socialicon.svg" alt="" />
+            </div>
+            <p class="team_card_biography">
+              4+ years of experience in social media marketing. Proficient in
+              creating and scheduling content, analyzing metrics, and building
+              engagement
+            </p>
+          </div>
+
+          <div class="team team_card team_card_hidden">
+            <div class="team_card_header">
+              <div class="team_image-container">
+                <img
+                  src="/assets/img/alexandra-gorn-smuS_jUZa9I-unsplash1.jpg"
+                  srcset="
+                    assets/img/alexandra-gorn-smuS_jUZa9I-unsplash1@2x.jpg 2x
+                  "
+                  alt="Image"
+                  class="team_image"
+                />
+              </div>
+              <div class="team__profile-card">
+                <p class="team__name">Sarah Kim</p>
+                <p>Content Creator</p>
+              </div>
+              <img
+                src="/assets/icons/Socialicon.svg"
+                alt=""
+                class="team_test"
+              />
+            </div>
+            <p class="team_card_biography">
+              2+ years of experience in writing and editing
+              <br />
+              Skilled in creating compelling, SEO-optimized content for various
+              industries
+            </p>
+          </div>
+
+          <div class="team team_card team_card_hidden">
+            <div class="team_card_header">
+              <div class="team_image-container">
+                <img
+                  src="/assets/img/chanvre-quebec-mXu1SpzHq6w-unsplash1.jpg"
+                  srcset="
+                    /assets/img/chanvre-quebec-mXu1SpzHq6w-unsplash1@2x.jpg 2x
+                  "
+                  alt="Image"
+                  class="team_image"
+                />
+              </div>
+              <div class="team__profile-card">
+                <p class="team__name">Brian Williams</p>
+                <p>Social Media Specialist</p>
+              </div>
+              <img src="/assets/icons/Socialicon.svg" alt="" />
+            </div>
+            <p class="team_card_biography">
+              4+ years of experience in social media marketing. Proficient in
+              creating and scheduling content, analyzing metrics, and building
+              engagement
+            </p>
+          </div>
+        </div>
+
+        <div class="team_wrapper_btn">
+          <button class="btn btn_primary btn_wide-side" id="team-all">
+            See all team
+          </button>
+        </div>
+      </section>
+
+      <section class="section section_testimonials">
+        <div class="section__header">
+          <h2 class="heading heading_bg_green">
+            <span>Testimonials</span>
+          </h2>
+          <p>
+            Hear from Our Satisfied Clients: Read Our Testimonials to Learn More
+            about Our Digital Marketing Services
           </p>
         </div>
 
-        <div class="team team_card team_card_hidden">
-          <div class="team_card_header">
-            <div class="team_image-container">
-              <img src="/assets/img/christian-buehner-DItYlc26zVI-unsplash1.jpg" srcset="/assets/img/christian-buehner-DItYlc26zVI-unsplash1@2x.jpg 2x" alt="Image" class="team_image">
+        <div class="testimonials testimonials_container">
+          <div class="testimonials_top-block">
+            <div class="testimonials_card">
+              <div class="testimonials_content">
+                <p class="testimonials_text">
+                  "We have been working with Positivus for the past year and
+                  have seen a significant increase in website traffic and leads
+                  as a result of their efforts. The team is professional,
+                  responsive, and truly cares about the success of our business.
+                  We highly recommend Positivus to any company looking to grow
+                  their online presence."
+                </p>
+              </div>
+              <div class="testimonials_author">
+                <p class="link_color_green">Sarah Kim</p>
+                <p class="link_color_white">Marketing Director at XYZ Corp</p>
+              </div>
             </div>
-            <div class="team__profile-card">
-              <p class="team__name">
-                Michael Brown
-              </p>
-              <p>
-                Senior SEO Specialist
-              </p>
+
+            <div class="testimonials_card">
+              <div class="testimonials_content">
+                <p class="testimonials_text">
+                  "We have been working with Positivus for the past year and
+                  have seen a significant increase in website traffic and leads
+                  as a result of their efforts. The team is professional,
+                  responsive, and truly cares about the success of our business.
+                  We highly recommend Positivus to any company looking to grow
+                  their online presence."
+                </p>
+              </div>
+              <div class="testimonials_author">
+                <p class="link_color_green">Brian Williams</p>
+                <p class="link_color_white">Marketing Director at XYZ Corp</p>
+              </div>
             </div>
-            <img src="/assets/icons/Socialicon.svg" alt="" >
-          </div>
-          <p class="team_card_biography">
-            5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization
+
+            <div class="testimonials_card">
+              <div class="testimonials_content">
+                <p class="testimonials_text">
+                  "We have been working with Positivus for the past year and
+                  have seen a significant increase in website traffic and leads
+                  as a result of their efforts. The team is professional,
+                  responsive, and truly cares about the success of our business.
+                  We highly recommend Positivus to any company looking to grow
+                  their online presence."
+                </p>
+              </div>
+              <div class="testimonials_author">
+                <p class="link_color_green">Emily Johnson</p>
+                <p class="link_color_white">Marketing Director at XYZ Corp</p>
+              </div>
+            </div>
+
+            <div class="testimonials_card">
+              <div class="testimonials_content">
+                <p class="testimonials_text">
+                  "We have been working with Positivus for the past year and
+                  have seen a significant increase in website traffic and leads
+                  as a result of their efforts. The team is professional,
+                  responsive, and truly cares about the success of our business.
+                  We highly recommend Positivus to any company looking to grow
+                  their online presence."
+                </p>
+              </div>
+              <div class="testimonials_author">
+                <p class="link_color_green">Michael Brown</p>
+                <p class="link_color_white">Marketing Director at XYZ Corp</p>
+              </div>
+            </div>
+
+            <div class="testimonials_card">
+              <div class="testimonials_content">
+                <p class="testimonials_text">
+                  "We have been working with Positivus for the past year and
+                  have seen a significant increase in website traffic and leads
+                  as a result of their efforts. The team is professional,
+                  responsive, and truly cares about the success of our business.
+                  We highly recommend Positivus to any company looking to grow
+                  their online presence."
+                </p>
+              </div>
+              <div class="testimonials_author">
+                <p class="link_color_green">Jane Doe</p>
+                <p class="link_color_white">Marketing Director at XYZ Corp</p>
+              </div>
+            </div>
+          </div>     
+          <div class="testimonials_lower-block">
+            <button type="button" class="slick-prev">
+              <img class="slick-prev-icon" src="/assets/icons/arrowright.svg" alt="Previous">
+            </button>
+            <div class="dots-container"></div>    
+            <button type="button" class="slick-next">
+              <img class="slick-next-icon" src="/assets/icons/arrowright.svg" alt="Next">
+            </button>
+          </div> 
+      </section>
+
+      <section class="section section_contact">
+        <div class="section__header">
+          <h2 class="heading heading_bg_green">
+            <span>Contact Us</span>
+          </h2>
+          <p>
+            Connect with Us: Let's Discuss Your Digital Marketing Needs
           </p>
         </div>
 
-        <div class="team team_card team_card_hidden">
-          <div class="team_card_header">
-            <div class="team_image-container">
-              <img src="/assets/img/feli-ramsanjami-agung-wUe_Q-t4-cI-unsplash1.jpg"    srcset="/assets/img/feli-ramsanjami-agung-wUe_Q-t4-cI-unsplash1@2x.jpg 2x" alt="Image" class="team_image">
+        <div class="contact contact_container">
+          <div class="contact_block-feedback">
+            <div class="contact_options-block">
+              <div class="contact_options-varian">
+                <input class="contact_options-input" type="radio" id="option1" name="options" value="first" required>
+                <label for="option1">Say Hi</label>
+              </div>              
+              <div class="contact_options-varian">
+                <input class="contact_options-input" type="radio" id="option2" name="options" value="first" required>
+                <label for="option2">Get a Quote</label>
+              </div>  
             </div>
-            <div class="team__profile-card">
-              <p class="team__name">
-                Emily Johnson
-              </p>
-              <p>
-                PPC Manager
-              </p>
+            <div class="contact_form-name">
+              <p class="contact_form_header">Name</p>
+              <input class="contact_form-name_input" type="text" placeholder="Name">
             </div>
-            <img src="/assets/icons/Socialicon.svg" alt="" >
+            <div class="contact_form-email">
+              <p class="contact_form_header">Email*</p>
+              <input class="contact_form-email_input" type="email" placeholder="Email";>
+            </div>
+            <div class="contact_form-message">
+              <p class="contact_form_header">Message*</p>
+              <textarea id="message" class="contact_form-message_input" placeholder="Message"></textarea>
+            </div>
+            <div class="contact_form-btn" >
+              <button class="btn btn_max-wide btn_wide-side">Send Message</button>             
+            </div>
           </div>
-          <p class="team_card_biography">
-            3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis
-          </p>
-        </div>
 
-        <div class="team team_card team_card_hidden">
-          <div class="team_card_header">
-            <div class="team_image-container">
-              <img src="/assets/img/chanvre-quebec-mXu1SpzHq6w-unsplash1.jpg" srcset="/assets/img/chanvre-quebec-mXu1SpzHq6w-unsplash1@2x.jpg 2x" alt="Image" class="team_image">
-            </div>
-            <div class="team__profile-card">
-              <p class="team__name">
-                Brian Williams
-              </p>
-              <p>
-                Social Media Specialist
-              </p>
-            </div>
-            <img src="/assets/icons/Socialicon.svg" alt="" >
+          <div class="contact_block-illustration">
+            <img class="contact_illustration" src="/assets/icons/Illustration(2).svg" alt="" />
           </div>
-          <p class="team_card_biography">
-            4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement
-          </p>
         </div>
-
-        <div class="team team_card team_card_hidden">
-          <div class="team_card_header">
-            <div class="team_image-container">
-              <img src="/assets/img/alexandra-gorn-smuS_jUZa9I-unsplash1.jpg" srcset="assets/img/alexandra-gorn-smuS_jUZa9I-unsplash1@2x.jpg 2x" alt="Image" class="team_image">
-            </div>
-            <div class="team__profile-card">
-              <p class="team__name">
-                Sarah Kim
-              </p>
-              <p>
-                Content Creator
-              </p>
-            </div>
-            <img src="/assets/icons/Socialicon.svg" alt="" class="team_test">
-          </div>
-          <p class="team_card_biography">
-            2+ years of experience in writing and editing 
-            <br>
-            Skilled in creating compelling, SEO-optimized content for various industries
-          </p>
-        </div>
-
-        <div class="team team_card team_card_hidden">
-          <div class="team_card_header">
-            <div class="team_image-container">
-              <img src="/assets/img/chanvre-quebec-mXu1SpzHq6w-unsplash1.jpg" srcset="/assets/img/chanvre-quebec-mXu1SpzHq6w-unsplash1@2x.jpg 2x" alt="Image" class="team_image">
-            </div>
-            <div class="team__profile-card">
-              <p class="team__name">
-                Brian Williams
-              </p>
-              <p>
-                Social Media Specialist
-              </p>
-            </div>
-            <img src="/assets/icons/Socialicon.svg" alt="" >
-          </div>
-          <p class="team_card_biography">
-            4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement
-          </p>
-        </div>
-      </div>
-
-      <div class="team_wrapper_btn"><button class="btn btn_primary btn_wide-side" id="team-all">See all team</button></div>
-    </section>      
- </div>  
-  <script src="script.js"></script>
-</body>
+      </section>
+     
+  
+    
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>  
+    <script src="script.js"></script>
+  </body>
 </html>
