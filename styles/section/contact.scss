@@ -5,11 +5,23 @@
     width: 100%;
     background-color: $color-grey;
     border-radius: 4rem;
+
+    @media all and (max-width: $media-m) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &_options-block {
     display: flex;
     gap: 3rem;
+    padding-bottom: 2rem;
+
+    @media all and (max-width: $media-m) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+      align-items: center;
+    }
   }
 
   &_options-varian {
@@ -17,6 +29,11 @@
     gap: 1rem;
     text-align: center;
     align-items: center;
+
+    @media all and (max-width: $media-m) {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &_options-input {
@@ -93,7 +110,12 @@
     height: auto;
     margin: 5rem;
     overflow: hidden;
+
+    @media all and (max-width: $media-m) {
+      display: none;
+    }
   }
+
   &_illustration {
     position: absolute;
     top: 0;
