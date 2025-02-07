@@ -1,12 +1,14 @@
 .btn {
   border-radius: 1.4rem;
-  padding: 2rem 3.5rem;
+  padding: 2rem 35.09px;
   font-size: $size-btn;
   color: $color-dark;
   background-color: transparent;
   border: none;
   cursor: pointer;
   outline-width: 0;
+  font-family: "Space grotesk";
+  font-weight: 400;
 
   @media all and (max-width: $media-m) {
     width: 100%;
@@ -24,6 +26,7 @@
   &_primary {
     color: $color-white;
     background-color: $color-dark;
+    padding: 2.1rem 35.09px;
 
     @media (hover: hover) {
       &:hover,
@@ -35,7 +38,7 @@
   }
 
   &_wide-side {
-    padding: 2rem 7rem;
+    padding: 2.1rem 7.6rem;
   }
 
   &_max-wide {

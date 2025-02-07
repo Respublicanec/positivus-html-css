@@ -39,7 +39,11 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Space Grotesk";
   font-weight: 500;
   margin: 0;
@@ -94,6 +98,7 @@ p {
 .partners {
   display: flex;
   justify-content: space-between;
+  padding-top: 7rem;
   flex-wrap: wrap;
   gap: 2rem 5rem;
   width: 100%;
@@ -137,7 +142,7 @@ p {
 
 .nav {
   display: flex;
-  font-size: 2rem;
+  font-size: 20px;
   gap: 4rem;
   align-items: center;
   margin-left: auto;
@@ -172,16 +177,23 @@ p {
   color: black;
   flex-shrink: 0;
 }
+.nav__link-White {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  flex-shrink: 0;
+}
 
 .btn {
   border-radius: 1.4rem;
-  padding: 2rem 3.5rem;
-  font-size: 2rem;
+  padding: 2rem 35.09px;
+  font-size: 20px;
   color: #191a23;
   background-color: transparent;
   border: none;
   cursor: pointer;
   outline-width: 0;
+  font-family: "Space grotesk";
+  font-weight: 400;
 }
 @media all and (max-width: 1300px) {
   .btn {
@@ -199,6 +211,7 @@ p {
 .btn_primary {
   color: #ffffff;
   background-color: #191a23;
+  padding: 2.1rem 35.09px;
 }
 @media (hover: hover) {
   .btn_primary:hover, .btn_primary:active {
@@ -207,7 +220,7 @@ p {
   }
 }
 .btn_wide-side {
-  padding: 2rem 7rem;
+  padding: 2.1rem 7.6rem;
 }
 .btn_max-wide {
   width: 100%;
@@ -311,7 +324,7 @@ p {
 .link {
   display: inline-flex;
   align-items: center;
-  font-size: 2rem;
+  font-size: 20px;
   color: #000000;
   text-decoration: none;
   column-gap: 1.5rem;
@@ -365,7 +378,10 @@ p {
 }
 .heading_bg_green span {
   background-color: #b9ff66;
+  font-family: "Space Grotesk";
   white-space: nowrap;
+  padding: 0 0.75rem;
+  border-radius: 0.8rem;
 }
 .heading_bg_black span {
   background-color: #000000;
@@ -391,9 +407,9 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 53rem;
-  margin-bottom: 10.5rem;
-  row-gap: 3.5rem;
+  max-width: 53.1rem;
+  row-gap: 3.9rem;
+  padding-bottom: 3.4rem;
 }
 @media all and (max-width: 1300px) {
   .section_first .section__container {
@@ -406,6 +422,9 @@ p {
     row-gap: 1rem;
   }
 }
+.section_first .section__container_text {
+  max-width: 50rem;
+}
 @media all and (max-width: 500px) {
   .section_first p {
     margin-bottom: 3rem;
@@ -415,7 +434,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  margin-bottom: 12rem;
+  margin-bottom: 4rem;
 }
 @media all and (max-width: 1300px) {
   .section_card .section__cards {
@@ -473,10 +492,15 @@ p {
     max-width: none;
   }
 }
+.section_footer {
+  background-color: #191a23;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+}
 .section__header {
   display: flex;
   column-gap: 4rem;
-  max-width: 75rem;
+  max-width: 82rem;
   margin-bottom: 8rem;
 }
 @media all and (max-width: 1300px) {
@@ -488,6 +512,9 @@ p {
     text-align: center;
   }
 }
+.section__header_short-text {
+  max-width: 60rem;
+}
 
 .card_service {
   border-radius: 4.5rem;
@@ -496,7 +523,7 @@ p {
   padding: 5rem;
   width: 100%;
   max-width: 60rem;
-  min-height: 31rem;
+  height: 31rem;
   background-color: #f3f3f3;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -548,6 +575,7 @@ p {
   background-color: #f3f3f3;
   border-radius: 4.5rem;
   row-gap: 2.6rem;
+  max-height: 34.7rem;
 }
 @media all and (max-width: 1300px) {
   .card_proposal {
@@ -560,6 +588,7 @@ p {
   position: absolute;
   top: 50%;
   right: 13.5rem;
+  max-height: 39.4rem;
   transform: translateY(-50%);
 }
 @media all and (max-width: 1300px) {
@@ -698,8 +727,10 @@ p {
 .team_card {
   display: flex;
   flex-direction: column;
-  padding: 3rem;
-  gap: 1rem;
+  min-width: 38.7rem;
+  min-height: 33.1rem;
+  padding: 4rem 3.5rem;
+  gap: 2.7rem;
   border: 1px solid #191a23;
   border-radius: 4rem;
   box-shadow: #000000 0 0.4rem 0 0;
@@ -707,19 +738,26 @@ p {
 @media all and (max-width: 1300px) {
   .team_card {
     padding: 4rem;
+    min-width: 30rem;
   }
 }
 .team_card_header {
   display: flex;
   gap: 2rem;
+  min-width: 31.7rem;
+  min-height: 10.2rem;
   justify-content: space-between;
   align-items: flex-start;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 2.8rem;
+}
+@media all and (max-width: 1300px) {
+  .team_card_header {
+    min-width: 100%;
+  }
 }
 .team_card_biography {
-  padding-top: 2rem;
-  margin: 2rem 0;
   align-items: center;
-  border-top: 1px solid #000000;
 }
 .team_card_hidden:nth-child(n+7) {
   display: none;
@@ -781,7 +819,7 @@ p {
   align-items: center;
   justify-content: center;
   background-color: #191a23;
-  padding: 5rem;
+  padding: 6.5rem;
 }
 @media all and (max-width: 1300px) {
   .testimonials_lower-block {
@@ -789,14 +827,24 @@ p {
   }
 }
 .testimonials_card {
-  width: 80%;
   padding: 8rem 4rem 0rem 4rem;
+}
+@media all and (max-width: 1300px) {
+  .testimonials_card {
+    width: 100px;
+  }
 }
 .testimonials_content {
   position: relative;
+  min-width: 60.6rem;
   border: 1px solid #b9ff66;
-  padding: 4rem;
+  padding: 3.89rem;
   border-radius: 4rem;
+}
+@media all and (max-width: 1300px) {
+  .testimonials_content {
+    min-width: auto;
+  }
 }
 .testimonials_content::after {
   content: "";
@@ -815,27 +863,27 @@ p {
 .testimonials_text {
   color: #ffffff;
   text-align: center;
-  padding: 10px;
+  padding: 10px 12px;
 }
 .testimonials_author {
-  padding: 5rem 9rem;
+  padding: 5.2rem 9rem 0 9rem;
 }
 
 .slick-prev {
   position: static;
-  margin: 0 20rem;
+  margin: 0.4rem 15rem 0 0;
   width: 3rem;
   transform: scale(-1);
 }
 @media all and (max-width: 1300px) {
   .slick-prev {
-    margin: 0;
+    margin: 0.4rem 0 0 0;
   }
 }
 
 .slick-next {
   position: static;
-  margin: 0.5rem 20rem 0 20rem;
+  margin: 0.5rem 0 0 15rem;
   width: 3rem;
 }
 @media all and (max-width: 1300px) {
@@ -869,7 +917,7 @@ p {
 }
 
 .slick-dots li {
-  width: 1.5rem;
+  width: 1.4rem;
   margin: 1rem;
 }
 
@@ -900,8 +948,6 @@ p {
 }
 @media all and (max-width: 1300px) {
   .contact_options-block {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     text-align: center;
     align-items: center;
   }
@@ -920,8 +966,8 @@ p {
 }
 .contact_options-input {
   appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 28px;
+  height: 28px;
   border: 1px solid #000000;
   border-radius: 50%;
   position: relative;
@@ -931,25 +977,27 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 10px;
-  height: 10px;
+  width: 16px;
+  height: 16px;
   background-color: #b9ff66;
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
 .contact_block-feedback {
-  display: grid;
-  padding: 8rem;
+  padding: 6rem 10rem 8rem 10rem;
+  min-width: 75.6rem;
+  max-height: 77.3rem;
 }
 .contact_form_header {
   padding: 3rem 0 1rem 0;
+  font-size: 1.6rem;
 }
 .contact_form-name {
   width: 100%;
 }
 .contact_form-name_input {
   width: 100%;
-  padding: 2rem;
+  padding: 2.1rem;
   border-radius: 1rem;
   border: 1px solid black;
 }
@@ -967,7 +1015,7 @@ p {
 }
 .contact_form-message_input {
   width: 100%;
-  min-height: 17rem;
+  min-height: 19rem;
   padding: 2rem;
   border-radius: 1rem;
   font-family: "Space Grotesk";
@@ -979,8 +1027,9 @@ p {
 .contact_block-illustration {
   position: relative;
   width: 100%;
+  left: 0px;
   height: auto;
-  margin: 5rem;
+  padding: 5rem;
   overflow: hidden;
 }
 @media all and (max-width: 1300px) {
@@ -990,9 +1039,14 @@ p {
 }
 .contact_illustration {
   position: absolute;
-  top: 0;
-  left: 15%;
-  height: auto;
+  height: 64.8rem;
+  top: 5rem;
+  left: 13rem;
+  height: 64.8rem;
+}
+
+.footer_header {
+  display: flex;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,10 +1,10 @@
-*{
+* {
   box-sizing: border-box;
 }
 
 html {
   font-size: $font-size-base;
-  font-family: $font-family
+  font-family: $font-family;
 }
 
 body {
@@ -13,7 +13,6 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  
 }
 
 .page {
@@ -29,7 +28,11 @@ body {
   }
 }
 
-h1, h2 ,h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: $font-family;
   font-weight: $weight-medium;
   margin: 0;
@@ -79,15 +82,16 @@ p {
 .partners {
   display: flex;
   justify-content: space-between;
+  padding-top: 7rem;
   flex-wrap: wrap;
   gap: 2rem 5rem;
   width: 100%;
 
   @media all and (max-width: $media-m) {
-    column-gap: 3rem;    
+    column-gap: 3rem;
   }
 
   img {
-   filter: grayscale(100);
+    filter: grayscale(100);
   }
 }

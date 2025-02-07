@@ -6,65 +6,64 @@
     padding: 5rem;
     width: 100%;
     max-width: 60rem;
-    min-height: 31rem;
+    height: 31rem;
     background-color: $color-grey;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "title img" "link img";
     @media all and (max-width: $media-m) {
-    grid-template-areas: "title title" "link img";
-    grid-template-rows: auto;
-    max-width: 100%;
-    row-gap: 3rem;
-  }
+      grid-template-areas: "title title" "link img";
+      grid-template-rows: auto;
+      max-width: 100%;
+      row-gap: 3rem;
+    }
 
-   .link {
-    grid-area: link;
-    margin-top: auto;
+    .link {
+      grid-area: link;
+      margin-top: auto;
 
-    &__text {
-      @media all and (max-width: $media-m) {
-        display: none;
+      &__text {
+        @media all and (max-width: $media-m) {
+          display: none;
+        }
       }
     }
-   }
 
-   .card__img {
-    grid-area: img;
-    margin-top: auto 0 auto auto;    
+    .card__img {
+      grid-area: img;
+      margin-top: auto 0 auto auto;
 
-    @media all and (max-width: $media-m) {
-      max-width: 16.5rem;
+      @media all and (max-width: $media-m) {
+        max-width: 16.5rem;
+      }
     }
-   }
 
-   .heading {
-    grid-area: title
-   }
+    .heading {
+      grid-area: title;
+    }
   }
 
-   &_bg {
+  &_bg {
     &_dark {
       background-color: $color-dark;
     }
     &_green {
       background-color: $color-green;
     }
-   }
+  }
 
-   &_proposal {
+  &_proposal {
     display: grid;
     grid-template-columns: 50rem;
     justify-items: flex-start;
-    
     width: 100%;
     padding: 6rem;
     position: relative;
-
     background-color: $color-grey;
     border-radius: $radius-card;
     row-gap: 2.6rem;
+    max-height: 34.7rem;
 
     @media all and (max-width: $media-m) {
       grid-template-columns: 1fr;
@@ -76,11 +75,12 @@
       position: absolute;
       top: 50%;
       right: 13.5rem;
+      max-height: 39.4rem;
       transform: translateY(-50%);
-      
+
       @media all and (max-width: $media-m) {
         display: none;
       }
     }
-   }
   }
+}

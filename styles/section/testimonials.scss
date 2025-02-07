@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: center;
     background-color: $color-dark;
-    padding: 5rem;
+    padding: 6.5rem;
 
     @media all and (max-width: $media-m) {
       justify-content: space-between;
@@ -27,15 +27,23 @@
   }
 
   &_card {
-    width: 80%;
     padding: 8rem 4rem 0rem 4rem;
+
+    @media all and (max-width: $media-m) {
+      width: 100px;
+    }
   }
 
   &_content {
     position: relative;
+    min-width: 60.6rem;
     border: 1px solid $color-green;
-    padding: 4rem;
+    padding: 3.89rem;
     border-radius: 4rem;
+
+    @media all and (max-width: $media-m) {
+      min-width: auto;
+    }
   }
 
   &_content::after {
@@ -56,9 +64,9 @@
   &_text {
     color: $color-white;
     text-align: center;
-    padding: 10px;
+    padding: 10px 12px;
   }
   &_author {
-    padding: 5rem 9rem;
+    padding: 5.2rem 9rem 0 9rem;
   }
 }
