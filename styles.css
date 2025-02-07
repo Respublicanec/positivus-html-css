@@ -948,12 +948,12 @@ p {
 }
 @media all and (max-width: 1300px) {
   .contact_options-block {
-    text-align: center;
-    align-items: center;
+    justify-content: center;
   }
 }
 .contact_options-varian {
   display: flex;
+  width: 100%;
   gap: 1rem;
   text-align: center;
   align-items: center;
@@ -987,6 +987,12 @@ p {
   padding: 6rem 10rem 8rem 10rem;
   min-width: 75.6rem;
   max-height: 77.3rem;
+}
+@media all and (max-width: 1300px) {
+  .contact_block-feedback {
+    min-width: auto;
+    padding: 4rem;
+  }
 }
 .contact_form_header {
   padding: 3rem 0 1rem 0;

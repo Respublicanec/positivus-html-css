@@ -17,13 +17,13 @@
     padding-bottom: 2rem;
 
     @media all and (max-width: $media-m) {
-      text-align: center;
-      align-items: center;
+      justify-content: center;
     }
   }
 
   &_options-varian {
     display: flex;
+    width: 100%;
     gap: 1rem;
     text-align: center;
     align-items: center;
@@ -59,6 +59,11 @@
     padding: 6rem 10rem 8rem 10rem;
     min-width: 75.6rem;
     max-height: 77.3rem;
+
+    @media all and (max-width: $media-m) {
+      min-width: auto;
+      padding: 4rem;
+    }
   }
 
   &_form_header {
