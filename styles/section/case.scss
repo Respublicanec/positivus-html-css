@@ -1,48 +1,52 @@
 .case {
   &_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: $color-dark;
-  border-radius: 4rem;
-  min-height: 31rem;
- 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: $color-dark;
+    border-radius: 4.5rem;
+    gap: 6.4rem;
+    margin: 2.8rem 0 0 0.6rem;
+    padding: 7rem 6rem 5.2rem 6rem;
+    width: 100%;
+    align-items: start;
 
-  @media all and (max-width: $media-m) {
-    row-gap: 3rem; 
-    overflow-x: auto;   
-    background-color: $color-white;
+    @media all and (max-width: $media-m) {
+      row-gap: 3rem;
+      overflow-x: auto;
+      background-color: $color-white;
     }
   }
 
   &_bg {
     &_white {
       color: $color-white;
-    } 
+    }
   }
 
   &_block {
     display: grid;
-    margin: 5rem 0;
-    padding: 0 6.5rem;
-    margin: 6rem 0 ;
-    gap: 1rem;
+    min-width: 35rem;
+    height: 100%;
+    gap: 2rem;
+    padding: 0 6.4rem 0 0;
+    font-weight: 100;
 
     @media all and (max-width: $media-m) {
       background-color: $color-dark;
       border-radius: 4rem;
-      padding: 5rem;
       min-width: 36rem;
       margin: 1rem;
     }
-
   }
 
   &_block:not(:last-child) {
-  border-right: 1px solid white;
+    border-right: 1px solid white;
 
-  @media all and (max-width: $media-m) {
-        border-right: none;
-        
-  } 
-} 
+    @media all and (max-width: $media-m) {
+      border-right: none;
+    }
+  }
+}
+
+.link_color_green {
 }

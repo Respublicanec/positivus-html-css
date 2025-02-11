@@ -52,7 +52,7 @@ $(document).ready(function () {
     appendDots: $(".dots-container"),
     speed: 300,
     centerMode: true,
-    centerPadding: "280px",
+    centerPadding: "287px",
     adaptiveHeight: true,
     nextArrow: $(".slick-next"),
     prevArrow: $(".slick-prev"),

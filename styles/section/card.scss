@@ -3,7 +3,7 @@
     border-radius: $radius-card;
     border: 1px solid $color-dark;
     box-shadow: 0 5px 0 0 $color-dark;
-    padding: 5rem;
+    padding: 4.9rem;
     width: 100%;
     max-width: 60rem;
     height: 31rem;
@@ -32,7 +32,7 @@
 
     .card__img {
       grid-area: img;
-      margin-top: auto 0 auto auto;
+      margin: auto 0 auto auto;
 
       @media all and (max-width: $media-m) {
         max-width: 16.5rem;

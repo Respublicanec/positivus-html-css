@@ -1,7 +1,7 @@
 .slick-prev {
   position: static;
-  margin: 0.4rem 15rem 0 0;
-  width: 3rem;
+  margin: 0 14rem 0 0;
+  width: 2.4rem;
   transform: scale(-1);
 
   @media all and (max-width: $media-m) {
@@ -11,8 +11,8 @@
 
 .slick-next {
   position: static;
-  margin: 0.5rem 0 0 15rem;
-  width: 3rem;
+  margin: 1.2rem 0 0 15rem;
+  width: 2.4rem;
 
   @media all and (max-width: $media-m) {
     margin: 0.5rem 0 0 0;
@@ -37,7 +37,7 @@
 .slick-dots {
   position: static;
   width: 100%;
-  padding: 10px;
+  padding: 10px 10px 10px 25px;
   margin: 10px;
   color: $color-white;
   white-space: nowrap;
@@ -45,7 +45,6 @@
 
 .slick-dots li {
   width: 1.4rem;
-
   margin: 1rem;
 }
 
@@ -55,4 +54,9 @@
 
 .slick-dotted {
   margin-bottom: 0 !important;
+}
+
+.dot-icon {
+  width: 16px;
+  padding: 1px;
 }

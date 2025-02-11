@@ -12,7 +12,7 @@
 
   &__decor {
     background-color: $color-dark;
-    
+
     &_green {
       background-color: $color-green;
     }
@@ -23,26 +23,26 @@
   }
 
   &__icon {
-    width: 2rem;
-    height: 2rem;
+    width: 2.1rem;
+    height: 2.1rem;
     fill: $color-white;
   }
 
   &_round {
-   #{$decor} {
-    width: 4.1rem;
-    height: 4.1rem;
-    border-radius: 50%;
-    position: relative;
-   }
+    #{$decor} {
+      width: 4.1rem;
+      height: 4.1rem;
+      border-radius: 50%;
+      position: relative;
+    }
 
-   #{$icon} {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 2;
-    transform: translate(-50%, -50%);
-   }
+    #{$icon} {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      transform: translate(-50%, -50%);
+    }
   }
 
   &_color {
@@ -65,6 +65,12 @@
     &_green {
       #{$icon} {
         fill: $color-green;
+      }
+    }
+
+    &_black {
+      #{$icon} {
+        fill: $color-black;
       }
     }
   }

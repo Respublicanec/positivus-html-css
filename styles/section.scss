@@ -19,8 +19,8 @@
       flex-direction: column;
       align-items: flex-start;
       max-width: 53.1rem;
-      row-gap: 3.9rem;
-      padding-bottom: 3.4rem;
+      row-gap: 3.1rem;
+      padding-bottom: 3.5rem;
 
       @media all and (max-width: $media-m) {
         margin: 0 auto 6rem;
@@ -32,7 +32,9 @@
       }
 
       &_text {
-        max-width: 50rem;
+        max-width: 49.8rem;
+        line-height: 24px;
+        padding-bottom: 0;
       }
     }
 
@@ -48,7 +50,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 4rem;
-      margin-bottom: 4rem;
+      margin: 8.6rem 0 3.7rem 0;
 
       @media all and (max-width: $media-m) {
         margin-bottom: 7rem;
@@ -59,7 +61,7 @@
   }
 
   &_case {
-    margin: 4rem 0 4rem 0;
+    margin: 5.2rem 0 4rem 0.2rem;
 
     @media all and (max-width: $media-m) {
       margin-bottom: 7rem;
@@ -68,7 +70,7 @@
   }
 
   &_working {
-    margin: 4rem 0 4rem 0;
+    margin: 13.4rem 0 6.9rem 0;
 
     @media all and (max-width: $media-m) {
       margin-bottom: 7rem;
@@ -93,6 +95,8 @@
   }
 
   &_testimonials {
+    margin: 2.4rem 0;
+
     @media all and (max-width: $media-m) {
       margin-bottom: 7rem;
       gap: 3rem;
@@ -100,6 +104,7 @@
   }
 
   &_contact {
+    margin-top: 11.9rem;
     width: 100%;
 
     @media all and (max-width: $media-m) {

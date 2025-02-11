@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "Space grotesk";
+  font-family: "Space Grotesk";
   src: url("/assets/fonts/SpaceGrotesk-Regular.ttf");
-  font-size: 400;
+  font-weight: 400;
 }
 @font-face {
   font-family: "Space Grotesk";
   src: url("/assets/fonts/SpaceGrotesk-Medium.ttf");
-  font-size: 500;
+  font-weight: 500;
 }
 * {
   box-sizing: border-box;
@@ -98,7 +98,7 @@ p {
 .partners {
   display: flex;
   justify-content: space-between;
-  padding-top: 7rem;
+  padding-top: 9.3rem;
   flex-wrap: wrap;
   gap: 2rem 5rem;
   width: 100%;
@@ -273,8 +273,8 @@ p {
 }
 
 .icon_plus, .icon_minus {
-  width: 5rem;
-  height: 5rem;
+  width: 5.8rem;
+  height: 5.8rem;
   border-radius: 50%;
   border: 1px solid #191a23;
   background-color: #f3f3f3;
@@ -303,11 +303,21 @@ p {
     height: 0.3rem;
   }
 }
+.icon_plus::before {
+  width: 2.5rem;
+  height: 0.6rem;
+}
+@media all and (max-width: 1300px) {
+  .icon_plus::before {
+    width: 1.3rem;
+    height: 0.3rem;
+  }
+}
 .icon_plus::after {
   content: "";
   display: block;
   width: 0.6rem;
-  height: 1.8rem;
+  height: 2.5rem;
   background-color: #191a23;
   position: absolute;
   top: 50%;
@@ -339,8 +349,8 @@ p {
   background-color: #ffffff;
 }
 .link__icon {
-  width: 2rem;
-  height: 2rem;
+  width: 2.1rem;
+  height: 2.1rem;
   fill: #ffffff;
 }
 .link_round .link__decor {
@@ -368,6 +378,9 @@ p {
 .link_icon_green .link__icon {
   fill: #b9ff66;
 }
+.link_icon_black .link__icon {
+  fill: #000000;
+}
 
 .heading apan {
   display: inline-block;
@@ -375,6 +388,10 @@ p {
 }
 .heading_bg_white span {
   background-color: #ffffff;
+  font-family: "Space Grotesk";
+  white-space: nowrap;
+  padding: 0 0.75rem;
+  border-radius: 0.8rem;
 }
 .heading_bg_green span {
   background-color: #b9ff66;
@@ -408,8 +425,8 @@ p {
   flex-direction: column;
   align-items: flex-start;
   max-width: 53.1rem;
-  row-gap: 3.9rem;
-  padding-bottom: 3.4rem;
+  row-gap: 3.1rem;
+  padding-bottom: 3.5rem;
 }
 @media all and (max-width: 1300px) {
   .section_first .section__container {
@@ -423,7 +440,9 @@ p {
   }
 }
 .section_first .section__container_text {
-  max-width: 50rem;
+  max-width: 49.8rem;
+  line-height: 24px;
+  padding-bottom: 0;
 }
 @media all and (max-width: 500px) {
   .section_first p {
@@ -434,7 +453,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  margin-bottom: 4rem;
+  margin: 8.6rem 0 3.7rem 0;
 }
 @media all and (max-width: 1300px) {
   .section_card .section__cards {
@@ -444,7 +463,7 @@ p {
   }
 }
 .section_case {
-  margin: 4rem 0 4rem 0;
+  margin: 5.2rem 0 4rem 0.2rem;
 }
 @media all and (max-width: 1300px) {
   .section_case {
@@ -453,7 +472,7 @@ p {
   }
 }
 .section_working {
-  margin: 4rem 0 4rem 0;
+  margin: 13.4rem 0 6.9rem 0;
 }
 @media all and (max-width: 1300px) {
   .section_working {
@@ -478,6 +497,9 @@ p {
     margin-bottom: 1rem;
   }
 }
+.section_testimonials {
+  margin: 2.4rem 0;
+}
 @media all and (max-width: 1300px) {
   .section_testimonials {
     margin-bottom: 7rem;
@@ -485,6 +507,7 @@ p {
   }
 }
 .section_contact {
+  margin-top: 11.9rem;
   width: 100%;
 }
 @media all and (max-width: 1300px) {
@@ -520,7 +543,7 @@ p {
   border-radius: 4.5rem;
   border: 1px solid #191a23;
   box-shadow: 0 5px 0 0 #191a23;
-  padding: 5rem;
+  padding: 4.9rem;
   width: 100%;
   max-width: 60rem;
   height: 31rem;
@@ -549,7 +572,7 @@ p {
 }
 .card_service .card__img {
   grid-area: img;
-  margin-top: auto 0 auto auto;
+  margin: auto 0 auto auto;
 }
 @media all and (max-width: 1300px) {
   .card_service .card__img {
@@ -601,8 +624,12 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: #191a23;
-  border-radius: 4rem;
-  min-height: 31rem;
+  border-radius: 4.5rem;
+  gap: 6.4rem;
+  margin: 2.8rem 0 0 0.6rem;
+  padding: 7rem 6rem 5.2rem 6rem;
+  width: 100%;
+  align-items: start;
 }
 @media all and (max-width: 1300px) {
   .case_container {
@@ -616,16 +643,16 @@ p {
 }
 .case_block {
   display: grid;
-  margin: 5rem 0;
-  padding: 0 6.5rem;
-  margin: 6rem 0;
-  gap: 1rem;
+  min-width: 35rem;
+  height: 100%;
+  gap: 2rem;
+  padding: 0 6.4rem 0 0;
+  font-weight: 100;
 }
 @media all and (max-width: 1300px) {
   .case_block {
     background-color: #191a23;
     border-radius: 4rem;
-    padding: 5rem;
     min-width: 36rem;
     margin: 1rem;
   }
@@ -641,18 +668,22 @@ p {
 
 .working_container {
   display: grid;
-  gap: 2rem;
+  gap: 3rem;
   width: 100%;
-  padding: 0;
+  max-width: 123.6rem;
+  padding: 0 0 0 0.2rem;
+  margin: 0;
 }
 .working_block {
   display: grid;
   grid-template-columns: 5rem 1fr;
   align-items: center;
   border: 1px solid #191a23;
-  border-radius: 5rem;
+  overflow: hidden;
+  border-radius: 4.5rem;
   counter-increment: item;
-  box-shadow: #000000 0px 3px 0px 0px;
+  box-shadow: #000000 0px 5px 0px 0px;
+  padding: 1rem 0 1.1rem 0;
   cursor: pointer;
 }
 @media all and (max-width: 1300px) {
@@ -663,8 +694,9 @@ p {
 .working_header {
   display: flex;
   justify-content: space-between;
-  padding: 5rem;
+  padding: 3.8rem 5.6rem 4rem 0;
   font-size: 3rem;
+  overflow: hidden;
   align-items: center;
 }
 @media all and (max-width: 1300px) {
@@ -675,24 +707,29 @@ p {
 }
 .working_content {
   grid-column: 1/-1;
-  max-height: 0;
-  overflow: hidden;
   font-size: 1.8rem;
-  padding: 0;
-  margin: 0 4rem 0 4rem;
   transition: max-height 0.3s ease, padding 0.3s ease;
+  display: none;
 }
 .working_content_open {
   max-height: 20rem;
-  padding: 3rem 0 4rem 0;
+  padding: 3rem 0 4.4rem 0;
   border-top: 1px solid #191a23;
+  margin: 0 5.9rem;
+  display: block;
+}
+.working_container li {
+  grid-template-columns: auto 1fr;
+  position: relative;
+}
+.working_container li h3 {
+  padding-left: 1.5rem;
 }
 .working_container li::before {
   content: counter(item, decimal-leading-zero) " ";
-  padding: 0 4rem;
+  padding: 0 1rem 0 6rem;
   color: #191a23;
-  font-weight: bold;
-  font-size: 4rem;
+  font-size: 6rem;
 }
 @media all and (max-width: 1300px) {
   .working_container li::before {
@@ -727,13 +764,13 @@ p {
 .team_card {
   display: flex;
   flex-direction: column;
-  min-width: 38.7rem;
+  max-width: 38.7rem;
   min-height: 33.1rem;
-  padding: 4rem 3.5rem;
+  padding: 3.9rem 3.4rem;
   gap: 2.7rem;
   border: 1px solid #191a23;
-  border-radius: 4rem;
-  box-shadow: #000000 0 0.4rem 0 0;
+  border-radius: 4.5rem;
+  box-shadow: #000000 0 0.5rem 0 0;
 }
 @media all and (max-width: 1300px) {
   .team_card {
@@ -744,17 +781,18 @@ p {
 .team_card_header {
   display: flex;
   gap: 2rem;
-  min-width: 31.7rem;
-  min-height: 10.2rem;
   justify-content: space-between;
   align-items: flex-start;
   border-bottom: 1px solid #000000;
-  padding-bottom: 2.8rem;
+  padding-bottom: 2.4rem;
 }
 @media all and (max-width: 1300px) {
   .team_card_header {
     min-width: 100%;
   }
+}
+.team_card_header_img {
+  margin-left: -1rem;
 }
 .team_card_biography {
   align-items: center;
@@ -771,33 +809,19 @@ p {
   width: 100%;
   align-self: flex-end;
   overflow: visible;
+  padding-bottom: 0.3rem;
   margin-right: -5rem;
 }
 .team__name {
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 600;
 }
-.team_image {
-  clip-path: path("M 20 0 Q 0 0, 0 20 Q 0 40, 14 50 Q 0 70, 0 80 Q 0 99, 20 98  Q 40 98, 50 84 Q 60 98, 78 98 Q 98 98, 98 78 Q 98 60, 84 50 Q 98 40, 98 20 Q 98 0, 78 0 Q 60 0, 50 14 Q 40 0, 20 0Z");
-  filter: drop-shadow(0 4px 8px rgb(0, 0, 0));
-  position: relative;
-  z-index: 1;
-}
-.team_image-container {
-  position: relative;
-}
-.team_image-container::after {
-  z-index: 0;
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 100%;
-  height: 100%;
-  clip-path: path("M 20 0 Q 0 0, 0 20 Q 0 40, 14 50 Q 0 70, 0 80 Q 0 99, 20 98 Q 40 98, 50 84 Q 60 98, 78 98 Q 98 98, 98 78 Q 98 60, 84 50 Q 98 40, 98 20 Q 98 0, 78 0 Q 60 0, 50 14 Q 40 0, 20 0Z");
-  background-color: black;
+.team_position {
+  width: 19.5rem;
+  font-weight: 100;
 }
 .team_wrapper_btn {
-  padding-top: 3rem;
+  padding-top: 4.7rem;
   text-align: end;
 }
 
@@ -806,7 +830,8 @@ p {
   flex-direction: column;
   overflow: hidden;
   width: 100%;
-  border-radius: 4rem;
+  border-radius: 4.5rem;
+  margin-left: 0.6rem;
 }
 .testimonials_top-block {
   display: flex;
@@ -819,7 +844,7 @@ p {
   align-items: center;
   justify-content: center;
   background-color: #191a23;
-  padding: 6.5rem;
+  padding: 9.3rem 7rem 4rem 4rem;
 }
 @media all and (max-width: 1300px) {
   .testimonials_lower-block {
@@ -827,7 +852,7 @@ p {
   }
 }
 .testimonials_card {
-  padding: 8rem 4rem 0rem 4rem;
+  padding: 7.4rem 4rem 0rem 2.5rem;
 }
 @media all and (max-width: 1300px) {
   .testimonials_card {
@@ -839,7 +864,7 @@ p {
   min-width: 60.6rem;
   border: 1px solid #b9ff66;
   padding: 3.89rem;
-  border-radius: 4rem;
+  border-radius: 4.5rem;
 }
 @media all and (max-width: 1300px) {
   .testimonials_content {
@@ -853,26 +878,24 @@ p {
   width: 4rem;
   height: 4rem;
   bottom: -2.1rem;
-  left: 8rem;
+  left: 6.2rem;
   background-color: #191a23;
   border-left: 1px solid #b9ff66;
   border-bottom: 1px solid #b9ff66;
   transform: rotate(-45deg);
-  border-radius: 3px;
 }
 .testimonials_text {
   color: #ffffff;
-  text-align: center;
   padding: 10px 12px;
 }
 .testimonials_author {
-  padding: 5.2rem 9rem 0 9rem;
+  padding: 4.8rem 9rem 0 8rem;
 }
 
 .slick-prev {
   position: static;
-  margin: 0.4rem 15rem 0 0;
-  width: 3rem;
+  margin: 0 14rem 0 0;
+  width: 2.4rem;
   transform: scale(-1);
 }
 @media all and (max-width: 1300px) {
@@ -883,8 +906,8 @@ p {
 
 .slick-next {
   position: static;
-  margin: 0.5rem 0 0 15rem;
-  width: 3rem;
+  margin: 1.2rem 0 0 15rem;
+  width: 2.4rem;
 }
 @media all and (max-width: 1300px) {
   .slick-next {
@@ -910,7 +933,7 @@ p {
 .slick-dots {
   position: static;
   width: 100%;
-  padding: 10px;
+  padding: 10px 10px 10px 25px;
   margin: 10px;
   color: #ffffff;
   white-space: nowrap;
@@ -929,6 +952,11 @@ p {
   margin-bottom: 0 !important;
 }
 
+.dot-icon {
+  width: 16px;
+  padding: 1px;
+}
+
 .contact_container {
   display: grid;
   grid-template-columns: 60% 1fr;
@@ -943,8 +971,7 @@ p {
 }
 .contact_options-block {
   display: flex;
-  gap: 3rem;
-  padding-bottom: 2rem;
+  gap: 3.4rem;
 }
 @media all and (max-width: 1300px) {
   .contact_options-block {
@@ -953,8 +980,9 @@ p {
 }
 .contact_options-varian {
   display: flex;
-  width: 100%;
+  width: auto;
   gap: 1rem;
+  padding-bottom: 1.5rem;
   text-align: center;
   align-items: center;
 }
@@ -966,9 +994,10 @@ p {
 }
 .contact_options-input {
   appearance: none;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   border: 1px solid #000000;
+  margin-left: 0;
   border-radius: 50%;
   position: relative;
 }
@@ -984,9 +1013,12 @@ p {
   transform: translate(-50%, -50%);
 }
 .contact_block-feedback {
-  padding: 6rem 10rem 8rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.7rem;
+  padding: 5.5rem 10rem 8rem 10rem;
   min-width: 75.6rem;
-  max-height: 77.3rem;
+  justify-content: center;
 }
 @media all and (max-width: 1300px) {
   .contact_block-feedback {
@@ -995,7 +1027,7 @@ p {
   }
 }
 .contact_form_header {
-  padding: 3rem 0 1rem 0;
+  padding-bottom: 0.9rem;
   font-size: 1.6rem;
 }
 .contact_form-name {
@@ -1003,8 +1035,11 @@ p {
 }
 .contact_form-name_input {
   width: 100%;
-  padding: 2.1rem;
-  border-radius: 1rem;
+  padding: 1.8rem 2.9rem;
+  border-radius: 1.5rem;
+  font-family: "Space Grotesk";
+  font-weight: 400;
+  font-size: 1.8rem;
   border: 1px solid black;
 }
 .contact_form-email {
@@ -1012,23 +1047,29 @@ p {
 }
 .contact_form-email_input {
   width: 100%;
-  padding: 2rem;
-  border-radius: 1rem;
+  padding: 1.8rem 2.9rem;
+  border-radius: 1.5rem;
+  font-family: "Space Grotesk";
+  font-weight: 400;
+  font-size: 1.8rem;
   border: 1px solid black;
 }
 .contact_form-message {
   width: 100%;
+  font-family: "Space Grotesk";
+  font-weight: 400;
 }
 .contact_form-message_input {
   width: 100%;
   min-height: 19rem;
-  padding: 2rem;
-  border-radius: 1rem;
+  padding: 1.8rem 2.9rem;
+  border-radius: 1.5rem;
   font-family: "Space Grotesk";
+  font-size: 1.8rem;
   border: 1px solid black;
 }
 .contact_form-btn {
-  padding-top: 5rem;
+  padding-top: 1rem;
 }
 .contact_block-illustration {
   position: relative;
@@ -1045,10 +1086,9 @@ p {
 }
 .contact_illustration {
   position: absolute;
-  height: 64.8rem;
-  top: 5rem;
-  left: 13rem;
-  height: 64.8rem;
+  top: 6.2rem;
+  left: 12.5rem;
+  height: 65.7rem;
 }
 
 .footer_header {

@@ -13,8 +13,7 @@
 
   &_options-block {
     display: flex;
-    gap: 3rem;
-    padding-bottom: 2rem;
+    gap: 3.4rem;
 
     @media all and (max-width: $media-m) {
       justify-content: center;
@@ -23,8 +22,9 @@
 
   &_options-varian {
     display: flex;
-    width: 100%;
+    width: auto;
     gap: 1rem;
+    padding-bottom: 1.5rem;
     text-align: center;
     align-items: center;
 
@@ -36,9 +36,10 @@
 
   &_options-input {
     appearance: none;
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
     border: 1px solid #000000;
+    margin-left: 0;
     border-radius: 50%;
     position: relative;
   }
@@ -56,9 +57,12 @@
   }
 
   &_block-feedback {
-    padding: 6rem 10rem 8rem 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.7rem;
+    padding: 5.5rem 10rem 8rem 10rem;
     min-width: 75.6rem;
-    max-height: 77.3rem;
+    justify-content: center;
 
     @media all and (max-width: $media-m) {
       min-width: auto;
@@ -67,7 +71,7 @@
   }
 
   &_form_header {
-    padding: 3rem 0 1rem 0;
+    padding-bottom: 0.9rem;
     font-size: 1.6rem;
   }
 
@@ -76,8 +80,11 @@
 
     &_input {
       width: 100%;
-      padding: 2.1rem;
-      border-radius: 1rem;
+      padding: 1.8rem 2.9rem;
+      border-radius: 1.5rem;
+      font-family: "Space Grotesk";
+      font-weight: 400;
+      font-size: 1.8rem;
       border: 1px solid black;
     }
   }
@@ -87,26 +94,32 @@
 
     &_input {
       width: 100%;
-      padding: 2rem;
-      border-radius: 1rem;
+      padding: 1.8rem 2.9rem;
+      border-radius: 1.5rem;
+      font-family: "Space Grotesk";
+      font-weight: 400;
+      font-size: 1.8rem;
       border: 1px solid black;
     }
   }
   &_form-message {
     width: 100%;
+    font-family: "Space Grotesk";
+    font-weight: 400;
 
     &_input {
       width: 100%;
       min-height: 19rem;
-      padding: 2rem;
-      border-radius: 1rem;
+      padding: 1.8rem 2.9rem;
+      border-radius: 1.5rem;
       font-family: "Space Grotesk";
+      font-size: 1.8rem;
       border: 1px solid black;
     }
   }
 
   &_form-btn {
-    padding-top: 5rem;
+    padding-top: 1rem;
   }
 
   &_block-illustration {
@@ -124,9 +137,8 @@
 
   &_illustration {
     position: absolute;
-    height: 64.8rem;
-    top: 5rem;
-    left: 13rem;
-    height: 64.8rem;
+    top: 6.2rem;
+    left: 12.5rem;
+    height: 65.7rem;
   }
 }

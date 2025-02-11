@@ -17,13 +17,13 @@
   &_card {
     display: flex;
     flex-direction: column;
-    min-width: 38.7rem;
+    max-width: 38.7rem;
     min-height: 33.1rem;
-    padding: 4rem 3.5rem;
+    padding: 3.9rem 3.4rem;
     gap: 2.7rem;
     border: 1px solid $color-dark;
-    border-radius: 4rem;
-    box-shadow: $color-black 0 0.4rem 0 0;
+    border-radius: 4.5rem;
+    box-shadow: $color-black 0 0.5rem 0 0;
 
     @media all and (max-width: $media-m) {
       padding: 4rem;
@@ -33,15 +33,17 @@
     &_header {
       display: flex;
       gap: 2rem;
-      min-width: 31.7rem;
-      min-height: 10.2rem;
       justify-content: space-between;
       align-items: flex-start;
       border-bottom: 1px solid $color-black;
-      padding-bottom: 2.8rem;
+      padding-bottom: 2.4rem;
 
       @media all and (max-width: $media-m) {
         min-width: 100%;
+      }
+
+      &_img {
+        margin-left: -1rem;
       }
     }
 
@@ -64,42 +66,25 @@
     width: 100%;
     align-self: flex-end;
     overflow: visible;
+    padding-bottom: 0.3rem;
     margin-right: -5rem;
   }
 
   &__name {
-    font-weight: bold;
+    font-size: 2rem;
+    font-weight: 600;
   }
 
   &_image {
-    clip-path: path(
-      "M 20 0 Q 0 0, 0 20 Q 0 40, 14 50 Q 0 70, 0 80 Q 0 99, 20 98  Q 40 98, 50 84 Q 60 98, 78 98 Q 98 98, 98 78 Q 98 60, 84 50 Q 98 40, 98 20 Q 98 0, 78 0 Q 60 0, 50 14 Q 40 0, 20 0Z"
-    );
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0));
-    position: relative;
-    z-index: 1;
   }
 
-  &_image-container {
-    position: relative;
-  }
-
-  &_image-container::after {
-    z-index: 0;
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 100%;
-    height: 100%;
-    clip-path: path(
-      "M 20 0 Q 0 0, 0 20 Q 0 40, 14 50 Q 0 70, 0 80 Q 0 99, 20 98 Q 40 98, 50 84 Q 60 98, 78 98 Q 98 98, 98 78 Q 98 60, 84 50 Q 98 40, 98 20 Q 98 0, 78 0 Q 60 0, 50 14 Q 40 0, 20 0Z"
-    );
-    background-color: black;
+  &_position {
+    width: 19.5rem;
+    font-weight: 100;
   }
 
   &_wrapper_btn {
-    padding-top: 3rem;
+    padding-top: 4.7rem;
     text-align: end;
   }
 }

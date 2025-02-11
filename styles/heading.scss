@@ -8,6 +8,10 @@
     &_white {
       span {
         background-color: $color-white;
+        font-family: "Space Grotesk";
+        white-space: nowrap;
+        padding: 0 0.75rem;
+        border-radius: 0.8rem;
       }
     }
 
