@@ -14,6 +14,10 @@
   &_first {
     position: relative;
 
+    @media all and (max-width: $media-s) {
+      margin-bottom: 0;
+    }
+
     #{$this}__container {
       display: flex;
       flex-direction: column;
@@ -25,6 +29,8 @@
       @media all and (max-width: $media-m) {
         margin: 0 auto 6rem;
         max-width: 100rem;
+        font-size: 1.5rem;
+        padding-bottom: 0;
       }
 
       @media all and (max-width: $media-s) {
@@ -35,6 +41,12 @@
         max-width: 49.8rem;
         line-height: 24px;
         padding-bottom: 0;
+        font-weight: 400;
+
+        @media all and (max-width: $media-s) {
+          padding-bottom: 2.7rem;
+          font-size: 1.6rem;
+        }
       }
     }
 
@@ -46,6 +58,10 @@
   }
 
   &_card {
+    @media all and (max-width: $media-m) {
+      margin-top: 3rem;
+    }
+
     #{$this}__cards {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -54,6 +70,7 @@
 
       @media all and (max-width: $media-m) {
         margin-bottom: 7rem;
+        margin-top: 2.2rem;
         grid-template-columns: repeat(auto-fit, minmax(39rem, 1fr));
         gap: 3rem;
       }
@@ -64,8 +81,7 @@
     margin: 5.2rem 0 4rem 0.2rem;
 
     @media all and (max-width: $media-m) {
-      margin-bottom: 7rem;
-      gap: 3rem;
+      margin: 3.1rem 0 5rem 0.2rem;
     }
   }
 
@@ -73,8 +89,14 @@
     margin: 13.4rem 0 6.9rem 0;
 
     @media all and (max-width: $media-m) {
-      margin-bottom: 7rem;
-      gap: 3rem;
+      margin: 1rem 0 2.9rem 0;
+    }
+  }
+
+  &_working h2 {
+    @media all and (max-width: $media-m) {
+      font-size: 3.9rem;
+      line-height: 1.3;
     }
   }
 
@@ -85,8 +107,9 @@
 
     @media all and (max-width: $media-m) {
       position: relative;
+      left: 1.3rem;
       width: 100%;
-      max-width: 60rem;
+      max-width: 37rem;
     }
 
     @media all and (max-width: $media-s) {
@@ -98,8 +121,7 @@
     margin: 2.4rem 0;
 
     @media all and (max-width: $media-m) {
-      margin-bottom: 7rem;
-      gap: 3rem;
+      margin-bottom: 1rem;
     }
   }
 
@@ -108,6 +130,7 @@
     width: 100%;
 
     @media all and (max-width: $media-m) {
+      margin: 4.8rem 0;
       max-width: none;
     }
   }
@@ -127,9 +150,11 @@
     @media all and (max-width: $media-m) {
       flex-direction: column;
       row-gap: 3rem;
-      margin: 0 auto 4rem;
+      margin: 0 auto 3.8rem;
+      line-height: 1.4;
       justify-content: center;
       text-align: center;
+      margin-bottom: 2rem;
     }
 
     &_short-text {

@@ -16,12 +16,22 @@
     }
 
     &_green {
+      @media all and (max-width: $media-m) {
+        padding: 0 3rem;
+      }
+
       span {
         background-color: $color-green;
         font-family: "Space Grotesk";
         white-space: nowrap;
         padding: 0 0.75rem;
         border-radius: 0.8rem;
+
+        max-width: 5rem;
+
+        @media all and (max-width: $media-m) {
+          white-space: normal;
+        }
       }
     }
 

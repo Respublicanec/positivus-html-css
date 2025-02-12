@@ -1,10 +1,10 @@
 # positivus-html-css
-Макет - https://www.figma.com/design/trL44Dktj6laliENZoGIjc/Positivus-Landing-Page-Design-(Community)?node-id=330-762&t=e1wsfgsvELm237p7-0
 
-## Подключение 
+Макет - https://www.figma.com/design/trL44Dktj6laliENZoGIjc/Positivus-Landing-Page-Design-(Community)?node-id=330-762&t=PwzHwi7a5sMRcPhf-0
 
-Запуск через виртуальный сервер (расширение Live Server) 
+## Подключение
+
+Запуск через виртуальный сервер (расширение Live Server)
 
 Запускаем компилятор sass введя команду в терминал:
 sass --watch styles/index.scss:styles.css
-

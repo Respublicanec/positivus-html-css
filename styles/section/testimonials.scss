@@ -6,6 +6,10 @@
     width: 100%;
     border-radius: 4.5rem;
     margin-left: 0.6rem;
+
+    @media all and (max-width: $media-m) {
+      margin-top: 2.2rem;
+    }
   }
 
   &_top-block {
@@ -13,6 +17,10 @@
     width: 100%;
     background-color: $color-dark;
     overflow: hidden;
+
+    @media all and (max-width: $media-m) {
+      max-height: 43.5rem;
+    }
   }
 
   &_lower-block {
@@ -20,10 +28,10 @@
     align-items: center;
     justify-content: center;
     background-color: $color-dark;
-    padding: 9.3rem 7rem 4rem 4rem;
+    padding: 7.5rem 7rem 4rem 4rem;
 
     @media all and (max-width: $media-m) {
-      justify-content: space-between;
+      padding: 2.5rem 0 2.5rem 0;
     }
   }
 
@@ -31,6 +39,7 @@
     padding: 7.4rem 4rem 0rem 2.5rem;
 
     @media all and (max-width: $media-m) {
+      padding: 3rem 3rem 0rem 3rem;
       width: 100px;
     }
   }
@@ -44,6 +53,9 @@
 
     @media all and (max-width: $media-m) {
       min-width: auto;
+      padding: 1.9rem;
+      line-height: 1.5;
+      border-radius: 4rem;
     }
   }
 
@@ -59,6 +71,10 @@
     border-left: 1px solid $color-green;
     border-bottom: 1px solid $color-green;
     transform: rotate(-45deg);
+
+    @media all and (max-width: $media-m) {
+      left: 4rem;
+    }
   }
 
   &_text {
@@ -66,6 +82,12 @@
     padding: 10px 12px;
   }
   &_author {
-    padding: 4.8rem 9rem 0 8rem;
+    padding: 4.8rem 9rem 2rem 8rem;
+
+    @media all and (max-width: $media-m) {
+      left: 4rem;
+      padding: 4.4rem 0 0 6rem;
+      width: 100%;
+    }
   }
 }

@@ -6,11 +6,13 @@
     width: 100%;
 
     @media all and (max-width: $media-m) {
+      padding-top: 2rem;
       grid-template-columns: repeat(2, 1fr);
     }
 
     @media all and (max-width: $media-s) {
       grid-template-columns: 1fr;
+      gap: 3rem;
     }
   }
 
@@ -26,8 +28,10 @@
     box-shadow: $color-black 0 0.5rem 0 0;
 
     @media all and (max-width: $media-m) {
-      padding: 4rem;
+      border-top: none;
+      padding: 4.3rem;
       min-width: 30rem;
+      min-height: auto;
     }
 
     &_header {
@@ -39,7 +43,9 @@
       padding-bottom: 2.4rem;
 
       @media all and (max-width: $media-m) {
+        padding-bottom: 1.2rem;
         min-width: 100%;
+        gap: 1rem;
       }
 
       &_img {
@@ -68,11 +74,17 @@
     overflow: visible;
     padding-bottom: 0.3rem;
     margin-right: -5rem;
+
+    @media all and (max-width: $media-m) {
+      padding-bottom: 1rem;
+      padding-left: 2rem;
+      margin-right: -6.5rem;
+    }
   }
 
   &__name {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   &_image {
@@ -81,6 +93,10 @@
   &_position {
     width: 19.5rem;
     font-weight: 100;
+
+    @media all and (max-width: $media-m) {
+      max-width: 85%;
+    }
   }
 
   &_wrapper_btn {

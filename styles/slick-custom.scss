@@ -5,17 +5,17 @@
   transform: scale(-1);
 
   @media all and (max-width: $media-m) {
-    margin: 0.4rem 0 0 0;
+    margin: 0rem 0 0 2.7rem;
   }
 }
 
 .slick-next {
   position: static;
   margin: 1.2rem 0 0 15rem;
-  width: 2.4rem;
+  width: 2.7rem;
 
   @media all and (max-width: $media-m) {
-    margin: 0.5rem 0 0 0;
+    margin: 1.5rem 2.3rem 0 0;
   }
 }
 
@@ -32,6 +32,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media all and (max-width: $media-m) {
+    width: 100%;
+  }
 }
 
 .slick-dots {

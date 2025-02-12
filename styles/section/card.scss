@@ -1,4 +1,48 @@
 .card {
+  &__img {
+    grid-area: img;
+    padding-left: 4rem;
+    padding-top: 1rem;
+
+    @media all and (max-width: $media-s) {
+      max-width: 17rem;
+      max-height: 13.5rem;
+      padding-top: 0.2rem;
+    }
+  }
+
+  &_heading {
+    grid-area: title;
+    max-width: 60%;
+    &_white {
+      span {
+        background-color: $color-white;
+        font-family: "Space Grotesk";
+        white-space: nowrap;
+        padding: 0 0.75rem;
+        border-radius: 0.8rem;
+      }
+    }
+
+    &_green {
+      span {
+        background-color: $color-green;
+        font-family: "Space Grotesk";
+        white-space: nowrap;
+        padding: 0 0.75rem;
+        border-radius: 0.8rem;
+        max-width: 5rem;
+      }
+    }
+
+    &_black {
+      span {
+        background-color: $color-black;
+        color: $color-white;
+      }
+    }
+  }
+
   &_service {
     border-radius: $radius-card;
     border: 1px solid $color-dark;
@@ -12,35 +56,26 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "title img" "link img";
+
     @media all and (max-width: $media-m) {
       grid-template-areas: "title title" "link img";
       grid-template-rows: auto;
-      max-width: 100%;
-      row-gap: 3rem;
+      row-gap: 2.2rem;
+      min-height: 32.3rem;
     }
 
     .link {
       grid-area: link;
       margin-top: auto;
 
+      @media all and (max-width: $media-m) {
+      }
+
       &__text {
         @media all and (max-width: $media-m) {
           display: none;
         }
       }
-    }
-
-    .card__img {
-      grid-area: img;
-      margin: auto 0 auto auto;
-
-      @media all and (max-width: $media-m) {
-        max-width: 16.5rem;
-      }
-    }
-
-    .heading {
-      grid-area: title;
     }
   }
 
@@ -54,6 +89,7 @@
   }
 
   &_proposal {
+    display: block;
     display: grid;
     grid-template-columns: 50rem;
     justify-items: flex-start;
@@ -63,19 +99,34 @@
     background-color: $color-grey;
     border-radius: $radius-card;
     row-gap: 2.6rem;
-    max-height: 34.7rem;
 
     @media all and (max-width: $media-m) {
       grid-template-columns: 1fr;
-      padding: 5rem;
+      line-height: 1.4;
+      padding: 4.7rem 4.8rem 5rem 5.1rem;
       row-gap: 2rem;
+      max-height: 37rem;
+    }
+
+    &_full {
+      @media all and (max-width: $media-m) {
+        display: none;
+      }
+    }
+
+    &_min {
+      display: none;
+
+      @media all and (max-width: $media-m) {
+        width: 100%;
+        display: block;
+      }
     }
 
     img {
       position: absolute;
       top: 50%;
       right: 13.5rem;
-      max-height: 39.4rem;
       transform: translateY(-50%);
 
       @media all and (max-width: $media-m) {

@@ -29,6 +29,10 @@
   }
 
   &_round {
+    @media all and (max-width: $media-m) {
+      width: 60%;
+    }
+
     #{$decor} {
       width: 4.1rem;
       height: 4.1rem;

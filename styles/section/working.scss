@@ -1,11 +1,16 @@
 .working {
   &_container {
     display: grid;
-    gap: 3rem;
+    gap: 3.2rem;
     width: 100%;
     max-width: 123.6rem;
     padding: 0 0 0 0.2rem;
     margin: 0;
+
+    @media all and (max-width: $media-m) {
+      margin-top: 1rem;
+      gap: 2rem;
+    }
   }
 
   &_block {
@@ -22,20 +27,28 @@
 
     @media all and (max-width: $media-m) {
       border-top: none;
+      min-height: 10rem;
     }
   }
 
   &_header {
     display: flex;
     justify-content: space-between;
-    padding: 3.8rem 5.6rem 4rem 0;
+    padding: 4rem 5.6rem 3.6rem 0;
     font-size: $size-h3;
     overflow: hidden;
     align-items: center;
 
     @media all and (max-width: $media-m) {
-      font-size: $size-p-mob;
-      padding: 3rem;
+      padding: 0rem;
+    }
+  }
+
+  &_header h3 {
+    @media all and (max-width: $media-m) {
+      width: 80%;
+      padding-left: 0.5rem;
+      font-size: 1.8rem;
     }
   }
 
@@ -59,26 +72,23 @@
     position: relative;
   }
 
-  &_container li h3 {
-    padding-left: 1.5rem;
-  }
-
   &_container li::before {
     content: counter(item, decimal-leading-zero) " ";
-    padding: 0 1rem 0 6rem;
+    padding: 0 2.5rem 0 6rem;
     color: $color-dark;
+    font-weight: 500;
     font-size: 6rem;
 
     @media all and (max-width: $media-m) {
-      font-size: $size-h3-mob;
+      font-size: 3rem;
       font-weight: 600;
-      padding: 0 2.5rem;
+      padding: 0 2.8rem;
     }
   }
 
   &_bg {
     &_dark {
-      background-color: $color-white;
+      background-color: $color-grey;
     }
     &_green {
       background-color: $color-green;

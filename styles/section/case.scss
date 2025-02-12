@@ -11,9 +11,13 @@
     align-items: start;
 
     @media all and (max-width: $media-m) {
+      padding: 0;
+      margin: 1.5rem 0 0 0.2rem;
+      gap: 2rem;
       row-gap: 3rem;
       overflow-x: auto;
       background-color: $color-white;
+      border-radius: 0;
     }
   }
 
@@ -26,16 +30,19 @@
   &_block {
     display: grid;
     min-width: 35rem;
-    height: 100%;
     gap: 2rem;
+    height: 100%;
     padding: 0 6.4rem 0 0;
     font-weight: 100;
 
     @media all and (max-width: $media-m) {
       background-color: $color-dark;
-      border-radius: 4rem;
-      min-width: 36rem;
-      margin: 1rem;
+      padding: 4.4rem 4rem 3.3rem 4.9rem;
+      gap: 0;
+      border-radius: 4.5rem;
+      min-width: 35rem;
+      min-height: 25.2rem;
+      line-height: 1.5;
     }
   }
 
