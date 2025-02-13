@@ -1,5 +1,201 @@
 .footer {
-  &_header {
-    display: flex;
+  &_menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-content: center;
+    padding: 5rem 3rem 2rem 3rem;
+    gap: 3rem;
+
+    @media all and (min-width: $media-m) {
+      padding: 0;
+      max-width: 83.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(10px, auto));
+      justify-content: space-between;
+    }
+  }
+
+  &_navigation {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 1rem;
+    gap: 1.8rem;
+    font-size: 1.6rem;
+
+    @media all and (min-width: $media-m) {
+      padding-top: 0.2rem;
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      font-size: 1.8rem;
+    }
+  }
+
+  &_link {
+    color: $color-white;
+    text-decoration: none;
+    font-family: "Space Grotesk";
+    white-space: nowrap;
+
+    @media all and (min-width: $media-m) {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    &_blog {
+      display: none;
+
+      @media all and (min-width: $media-m) {
+        display: block;
+      }
+    }
+  }
+
+  &__logo {
+    display: block;
+    margin: 0 auto;
+    height: 2.3rem;
+
+    @media all and (min-width: $media-m) {
+      margin: 0;
+      height: auto;
+    }
+  }
+
+  &_contact {
+    display: grid;
+    gap: 3.7rem;
+    padding-top: 1.8rem;
+
+    @media all and (min-width: $media-m) {
+      padding-top: 6.6rem;
+      grid-template-columns: auto 1fr;
+    }
+
+    &_addres {
+      display: grid;
+      text-align: center;
+      gap: 1.7rem;
+
+      @media all and (min-width: $media-m) {
+        text-align: start;
+        gap: 1.5rem;
+      }
+
+      &_green {
+        max-width: fit-content;
+        margin: 0 auto;
+        background-color: $color-green;
+        padding: 0rem 0.6rem;
+        border-radius: 0.5rem;
+        margin-bottom: 2rem;
+
+        @media all and (min-width: $media-m) {
+          margin: 0;
+          max-height: fit-content;
+          margin-bottom: 1rem;
+          font-size: 2rem;
+        }
+      }
+
+      &_text {
+        color: $color-white;
+        font-size: 1.5rem;
+
+        @media all and (min-width: $media-m) {
+          font-size: 1.8rem;
+          max-height: fit-content;
+        }
+      }
+    }
+
+    &_subscribe {
+      display: grid;
+      gap: 2rem;
+      text-align: center;
+      background-color: #292a32;
+      padding: 3rem;
+      border-radius: 3rem;
+
+      @media all and (min-width: $media-m) {
+        grid-template-columns: 1fr auto;
+        width: 100%;
+        max-width: 63.4rem;
+        border-radius: 1rem;
+        margin-left: auto;
+        padding: 5.8rem 4rem 5.8rem 4rem;
+      }
+    }
+
+    &_subscribe input {
+      width: 100%;
+      background-color: #292a32;
+      color: white;
+      font-size: 1.6rem;
+      padding: 2.5rem;
+      border: 1px solid white;
+      border-radius: 1rem;
+
+      &::placeholder {
+        color: white;
+        font-family: "Space Grotesk";
+      }
+
+      @media all and (min-width: $media-m) {
+        padding: 2.5rem 2.5rem 2.5rem 3.4rem;
+      }
+    }
+  }
+
+  &_bottom {
+    @media all and (min-width: $media-m) {
+      position: relative;
+      padding-top: 5rem;
+    }
+
+    &_social {
+      display: flex;
+      flex-direction: row;
+      padding: 2.8rem;
+      width: 100%;
+      justify-content: center;
+
+      @media all and (min-width: $media-m) {
+        position: absolute;
+        bottom: 224%;
+        right: 0px;
+        float: right;
+        width: 12%;
+        text-align: right;
+      }
+    }
+
+    &_social img {
+      margin: 1rem;
+    }
+
+    &_info {
+      display: grid;
+      gap: 1.6rem;
+      text-align: center;
+      color: white;
+      border-top: 1px solid white;
+      padding: 3.6rem;
+
+      @media all and (min-width: $media-m) {
+        display: flex;
+        gap: 4.3rem;
+        text-align: left;
+        padding: 5rem 0;
+        white-space: nowrap;
+      }
+
+      &_decoration {
+        @media all and (min-width: $media-m) {
+          text-decoration: underline;
+          text-underline-offset: 3px;
+        }
+      }
+    }
   }
 }
