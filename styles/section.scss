@@ -135,20 +135,6 @@
     }
   }
 
-  &_footer {
-    background-color: $color-dark;
-    margin-top: 12rem;
-
-    @media all and (min-width: $media-m) {
-      margin-top: 7rem;
-      margin-left: 1.8rem;
-      border-radius: 4rem;
-      padding: 5.5rem 6rem 0rem 6rem;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-  }
-
   &__header {
     display: flex;
     column-gap: 4rem;

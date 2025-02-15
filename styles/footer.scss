@@ -1,4 +1,16 @@
 .footer {
+  background-color: $color-dark;
+  margin-top: 12rem;
+
+  @media all and (min-width: $media-m) {
+    margin-top: 7rem;
+    margin-left: 1.8rem;
+    border-radius: 4rem;
+    padding: 5.5rem 6rem 0rem 6rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
   &_menu {
     display: grid;
     grid-template-columns: 1fr;
@@ -9,9 +21,25 @@
 
     @media all and (min-width: $media-m) {
       padding: 0;
-      max-width: 83.5rem;
+      gap: 19rem;
+      max-width: 100%;
       grid-template-columns: repeat(auto-fit, minmax(10px, auto));
-      justify-content: space-between;
+    }
+
+    &_social {
+      display: none;
+
+      @media all and (min-width: $media-m) {
+        display: block;
+      }
+    }
+
+    &_social img {
+      margin: 0 1rem;
+
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 
@@ -36,6 +64,11 @@
     text-decoration: none;
     font-family: "Space Grotesk";
     white-space: nowrap;
+
+    &:hover {
+      color: $color-green;
+      text-decoration: none;
+    }
 
     @media all and (min-width: $media-m) {
       text-decoration: underline;
@@ -69,15 +102,17 @@
 
     @media all and (min-width: $media-m) {
       padding-top: 6.6rem;
+      gap: 3.7rem;
       grid-template-columns: auto 1fr;
     }
 
-    &_addres {
+    &_address {
       display: grid;
       text-align: center;
       gap: 1.7rem;
 
       @media all and (min-width: $media-m) {
+        font-style: normal;
         text-align: start;
         gap: 1.5rem;
       }
@@ -98,14 +133,20 @@
         }
       }
 
-      &_text {
+      &_text,
+      a {
         color: $color-white;
         font-size: 1.5rem;
+        text-decoration: none;
 
         @media all and (min-width: $media-m) {
           font-size: 1.8rem;
           max-height: fit-content;
         }
+      }
+
+      &_text a:hover {
+        color: $color-green;
       }
     }
 
@@ -149,7 +190,6 @@
 
   &_bottom {
     @media all and (min-width: $media-m) {
-      position: relative;
       padding-top: 5rem;
     }
 
@@ -161,12 +201,7 @@
       justify-content: center;
 
       @media all and (min-width: $media-m) {
-        position: absolute;
-        bottom: 224%;
-        right: 0px;
-        float: right;
-        width: 12%;
-        text-align: right;
+        display: none;
       }
     }
 

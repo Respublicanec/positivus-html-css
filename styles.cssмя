@@ -18,7 +18,6 @@ html {
 }
 
 body {
-  overflow-x: hidden;
   display: flex;
   justify-content: center;
   margin: 0;
@@ -145,7 +144,7 @@ p {
 .nav {
   display: flex;
   font-size: 20px;
-  gap: 3rem;
+  gap: 4rem;
   align-items: center;
   margin-left: auto;
 }
@@ -157,7 +156,7 @@ p {
     flex-direction: column;
     background-color: white;
     row-gap: 4rem;
-    padding: 3rem 6rem 4rem;
+    padding: 10rem 6rem 4rem;
     height: 100vh;
     width: 100%;
     z-index: 3;
@@ -343,35 +342,6 @@ p {
   color: #000000;
   text-decoration: none;
   column-gap: 1.5rem;
-}
-.link_close {
-  display: none;
-  position: relative;
-  width: 100%;
-  padding: 3rem 0;
-}
-@media all and (max-width: 1300px) {
-  .link_close {
-    display: block;
-  }
-}
-.link_close_button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-}
-.link_line {
-  position: absolute;
-  background-color: black;
-  width: 100%;
-  height: 2px;
-  transform: rotate(45deg);
-}
-.link_line:nth-child(2) {
-  transform: rotate(-45deg);
 }
 .link__decor {
   background-color: #191a23;
@@ -588,6 +558,20 @@ p {
   .section_contact {
     margin: 4.8rem 0;
     max-width: none;
+  }
+}
+.section_footer {
+  background-color: #191a23;
+  margin-top: 12rem;
+}
+@media all and (min-width: 1300px) {
+  .section_footer {
+    margin-top: 7rem;
+    margin-left: 1.8rem;
+    border-radius: 4rem;
+    padding: 5.5rem 6rem 0rem 6rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 .section__header {
@@ -885,7 +869,7 @@ p {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media all and (max-width: 690px) {
+@media all and (max-width: 500px) {
   .team_container {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -894,6 +878,7 @@ p {
 .team_card {
   display: flex;
   flex-direction: column;
+  max-width: 38.7rem;
   min-height: 33.1rem;
   padding: 3.9rem 3.4rem;
   gap: 2.7rem;
@@ -957,7 +942,7 @@ p {
   font-weight: 500;
 }
 .team_position {
-  max-width: 19.5rem;
+  width: 19.5rem;
   font-weight: 100;
 }
 @media all and (max-width: 1300px) {
@@ -1210,6 +1195,7 @@ p {
   }
 }
 .contact_form_header {
+  padding-bottom: 0.9rem;
   font-size: 1.6rem;
 }
 .contact_form-name {
@@ -1220,7 +1206,6 @@ p {
   padding: 1.8rem 2.9rem;
   border-radius: 1.5rem;
   font-family: "Space Grotesk";
-  margin-top: 0.9rem;
   font-weight: 400;
   font-size: 1.8rem;
   border: 1px solid black;
@@ -1239,7 +1224,6 @@ p {
   padding: 1.8rem 2.9rem;
   border-radius: 1.5rem;
   font-family: "Space Grotesk";
-  margin-top: 0.9rem;
   font-weight: 400;
   font-size: 1.8rem;
   border: 1px solid black;
@@ -1263,7 +1247,6 @@ p {
   font-family: "Space Grotesk";
   font-size: 1.8rem;
   border: 1px solid black;
-  margin-top: 0.9rem;
 }
 @media all and (max-width: 1300px) {
   .contact_form-message_input {
@@ -1303,20 +1286,6 @@ p {
   height: 65.7rem;
 }
 
-.footer {
-  background-color: #191a23;
-  margin-top: 12rem;
-}
-@media all and (min-width: 1300px) {
-  .footer {
-    margin-top: 7rem;
-    margin-left: 1.8rem;
-    border-radius: 4rem;
-    padding: 5.5rem 6rem 0rem 6rem;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-}
 .footer_menu {
   display: grid;
   grid-template-columns: 1fr;
@@ -1328,24 +1297,10 @@ p {
 @media all and (min-width: 1300px) {
   .footer_menu {
     padding: 0;
-    gap: 19rem;
-    max-width: 100%;
+    max-width: 83.5rem;
     grid-template-columns: repeat(auto-fit, minmax(10px, auto));
+    justify-content: space-between;
   }
-}
-.footer_menu_social {
-  display: none;
-}
-@media all and (min-width: 1300px) {
-  .footer_menu_social {
-    display: block;
-  }
-}
-.footer_menu_social img {
-  margin: 0 1rem;
-}
-.footer_menu_social img:hover {
-  transform: scale(1.2);
 }
 .footer_navigation {
   display: grid;
@@ -1369,10 +1324,6 @@ p {
   font-family: "Space Grotesk";
   white-space: nowrap;
 }
-.footer_link:hover {
-  color: #b9ff66;
-  text-decoration: none;
-}
 @media all and (min-width: 1300px) {
   .footer_link {
     text-decoration: underline;
@@ -1386,6 +1337,9 @@ p {
   .footer_link_blog {
     display: block;
   }
+}
+.footer_link:hover {
+  color: #05a82b;
 }
 .footer__logo {
   display: block;
@@ -1406,23 +1360,21 @@ p {
 @media all and (min-width: 1300px) {
   .footer_contact {
     padding-top: 6.6rem;
-    gap: 3.7rem;
     grid-template-columns: auto 1fr;
   }
 }
-.footer_contact_address {
+.footer_contact_addres {
   display: grid;
   text-align: center;
   gap: 1.7rem;
 }
 @media all and (min-width: 1300px) {
-  .footer_contact_address {
-    font-style: normal;
+  .footer_contact_addres {
     text-align: start;
     gap: 1.5rem;
   }
 }
-.footer_contact_address_green {
+.footer_contact_addres_green {
   max-width: fit-content;
   margin: 0 auto;
   background-color: #b9ff66;
@@ -1431,28 +1383,22 @@ p {
   margin-bottom: 2rem;
 }
 @media all and (min-width: 1300px) {
-  .footer_contact_address_green {
+  .footer_contact_addres_green {
     margin: 0;
     max-height: fit-content;
     margin-bottom: 1rem;
     font-size: 2rem;
   }
 }
-.footer_contact_address_text,
-.footer_contact_address a {
+.footer_contact_addres_text {
   color: #ffffff;
   font-size: 1.5rem;
-  text-decoration: none;
 }
 @media all and (min-width: 1300px) {
-  .footer_contact_address_text,
-  .footer_contact_address a {
+  .footer_contact_addres_text {
     font-size: 1.8rem;
     max-height: fit-content;
   }
-}
-.footer_contact_address_text a:hover {
-  color: #b9ff66;
 }
 .footer_contact_subscribe {
   display: grid;
@@ -1492,6 +1438,7 @@ p {
 }
 @media all and (min-width: 1300px) {
   .footer_bottom {
+    position: relative;
     padding-top: 5rem;
   }
 }
@@ -1504,7 +1451,12 @@ p {
 }
 @media all and (min-width: 1300px) {
   .footer_bottom_social {
-    display: none;
+    position: absolute;
+    bottom: 224%;
+    right: 0px;
+    float: right;
+    width: 12%;
+    text-align: right;
   }
 }
 .footer_bottom_social img {
@@ -1534,4 +1486,4 @@ p {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.css%D0%BC%D1%8F.map */

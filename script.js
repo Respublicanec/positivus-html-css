@@ -31,6 +31,16 @@ document.getElementById("menu").addEventListener("click", () => {
   document.getElementById("nav-header").style.transform = "none";
 });
 
+document.querySelector(".link_close_button").addEventListener("click", () => {
+  document.getElementById("nav-header").style.transform = "translateX(100%)";
+});
+
+document.querySelectorAll(".nav__link").forEach((link) => {
+  link.addEventListener("click", () => {
+    document.getElementById("nav-header").style.transform = "translateX(100%)";
+  });
+});
+
 document.getElementById("team-all").addEventListener("click", () => {
   const teamContainers = document.querySelectorAll(".team_card");
   const button = document.getElementById("team-all");
@@ -74,3 +84,7 @@ $(document).ready(function () {
     ],
   });
 });
+
+const date = new Date().getFullYear();
+
+document.getElementById("date").textContent = date;

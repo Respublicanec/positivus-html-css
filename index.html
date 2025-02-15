@@ -22,11 +22,18 @@
       <header class="header">
         <img src="./logo.png" alt="" class="logo logo_header" />
         <nav id="nav-header" class="nav nav_header">
-          <a class="nav__link" href="">About us</a>
-          <a class="nav__link" href="">Services</a>
-          <a class="nav__link" href="">Use Cases</a>
-          <a class="nav__link" href="">Pricing</a>
-          <a class="nav__link" href="">Blog</a>
+          <div class="link_close">
+            <div class="link_close_button" id="close-button">
+                <div class="link_line"></div>
+                <div class="link_line"></div>
+            </div>
+          </div>
+          <a class="nav__link" href="#services">Services</a>
+          <a class="nav__link" href="#section-case">Case</a>
+          <a class="nav__link" href="#working-process">Working</a>
+          <a class="nav__link" href="#team">Team</a>
+          <a class="nav__link" href="#testimonials">Testimonials</a>
+          <a class="nav__link" href="#contact ">Contact Us</a>
         </nav>
         <button class="btn btn_header btn_outline">Request a quote</button>
         <div class="menu" id="menu">
@@ -56,7 +63,7 @@
         </div>
       </section>
 
-      <section class="section section_card">
+      <section id="services" class="section section_card">
         <div class="section__header">
           <h2 class="heading heading_bg_green">
             <span>Services </span>
@@ -222,7 +229,7 @@
         </div>
       </section>
 
-      <section class="section section_case">
+      <section id="section-case" class="section section_case">
         <div class="section__header">
           <h2 class="heading heading_bg_green">
             <span>Case Studies</span>
@@ -279,7 +286,7 @@
         </div>
       </section>
 
-      <section class="section section_working">
+      <section id="working-process" class="section section_working">
         <div class="section__header">
           <h2 class="heading heading_bg_green">
             <span>Our Working Process</span>
@@ -378,7 +385,7 @@
         </ol>
       </section>
 
-      <section class="section section_team">
+      <section id="team" class="section section_team">
         <div class="section__header section__header_short-text">
           <h2 class="heading heading_bg_green">
             <span> Team </span>
@@ -560,7 +567,7 @@
         </div>
       </section>
 
-      <section class="section section_testimonials">
+      <section id="testimonials" class="section section_testimonials">
         <div class="section__header">
           <h2 class="heading heading_bg_green">
             <span>Testimonials</span>
@@ -669,7 +676,7 @@
           </div> 
       </section>
 
-      <section class="section section_contact">
+      <section id="contact" class="section section_contact">
         <div class="section__header section__header_short-text">
           <h2 class="heading heading_bg_green">
             <span>Contact Us</span>
@@ -680,15 +687,15 @@
         </div>
 
         <div class="contact contact_container">
-          <div class="contact_block-feedback">
+          <form  class="contact_block-feedback">
             <div class="contact_options-block">
-              <div class="contact_options-varian">
+              <div class="contact_options-variant">
                 <input class="contact_options-input" type="radio" id="option1" name="options" value="first" required>
                 <label for="option1">
                   <p>Say Hi</p>
                 </label>
               </div>              
-              <div class="contact_options-varian">
+              <div class="contact_options-variant">
                 <input class="contact_options-input" type="radio" id="option2" name="options" value="first" required>
                 <label for="option2">
                   <P>Get a Quote</P>
@@ -696,21 +703,21 @@
               </div>  
             </div>
             <div class="contact_form-name">
-              <p class="contact_form_header">Name</p>
-              <input class="contact_form-name_input" type="text" placeholder="Name">
+              <label for="name" class="contact_form_header">Name</label>
+              <input class="contact_form-name_input" type="name" id="name" placeholder="Name">
             </div>
             <div class="contact_form-email">
-              <p class="contact_form_header">Email*</p>
-              <input class="contact_form-email_input" type="email" placeholder="Email";>
+              <label for="email" class="contact_form_header">Email*</label>
+              <input class="contact_form-email_input" type="email" id="email" placeholder="Email";>
             </div>
             <div class="contact_form-message">
-              <p class="contact_form_header">Message*</p>
-              <textarea id="message" class="contact_form-message_input" placeholder="Message"></textarea>
+              <label for="message" class="contact_form_header">Message*</label>
+              <textarea id="message" class="contact_form-message_input" type="message" placeholder="Message"></textarea>
             </div>
             <div class="contact_form-btn" >
               <button class="btn btn_max-wide btn_wide-side">Send Message</button>             
             </div>
-          </div>
+          </form>
 
           <div class="contact_block-illustration">
             <img class="contact_illustration" src="/assets/icons/Illustration(2).svg" alt="" />
@@ -718,43 +725,65 @@
         </div>
       </section>
 
-      <section class="section section_footer">
-        <div class="footer footer_menu">
+      <footer class="footer">
+        <div class="footer_menu">
           <img src="./assets/icons/Logo.png" alt="" class="footer__logo" />
           <nav id="nav-header" class="footer_navigation">
-            <a class="footer_link" href="">About us</a>
-            <a class="footer_link" href="">Services</a>
-            <a class="footer_link" href="">Use Cases</a>
-            <a class="footer_link" href="">Pricing</a>
-            <a class="footer_link footer_link_blog" href="">Blog</a>
-          </nav>         
+            <a class="footer_link" href="#services">Services</a>
+            <a class="footer_link" href="#section-case">Case</a>
+            <a class="footer_link" href="#working-process">Working</a>
+            <a class="footer_link" href="#team">Team</a>
+            <a class="footer_link" href="#testimonials">Testimonials</a>
+            <a class="footer_link footer_link_blog" href="#contact">Contact Us</a>
+          </nav>  
+          <div class="footer_menu_social">
+            <a href="https://ru.linkedin.com/">
+              <img src="./assets/icons/Socialicon(3).svg" alt="" />
+            </a>
+            <a href="http://facebook.com/">
+              <img src="./assets/icons/Socialicon(2).svg" alt="" />
+            </a>
+            <a href="https://twitter.com/">
+              <img src="./assets/icons/Socialicon(1).svg" alt="" />
+            </a>
+          </div>      
         </div>
         <div class="footer_contact">
-          <div class="footer_contact_addres">
-            <p class="footer_contact_addres_green">Contact us:</p>
-            <p class="footer_contact_addres_text">Email: info@positivus.com</p>
-            <p class="footer_contact_addres_text">Phone: 555-567-8901</p>
-            <p class="footer_contact_addres_text">Address: 1234 Main St 
+          <address class="footer_contact_address">
+            <p class="footer_contact_address_green">Contact us:</p>
+            <p class="footer_contact_address_text">
+              Email: <a href="mailto:info@positivus.com">info@positivus.com</a>
+            </p>
+            <p class="footer_contact_address_text">
+              Phone: <a href="tel:5555678901">555-567-8901</a>
+            </p>
+            <p class="footer_contact_address_text">Address: 1234 Main St 
               <br>             
               Moonstone City, Stardust State 12345</p>            
-          </div>
-          <div class="footer_contact_subscribe">
+          </address>
+          <form  class="footer_contact_subscribe">
             <input type="email" placeholder="Email">
             <button class="btn btn_secondary">Subscribe to news</button>
-          </div>
+          </form>
         </div>
         <div class="footer_bottom">
           <div class="footer_bottom_social">
-            <img src="./assets/icons/Socialicon(3).svg" alt="" />
-            <img src="./assets/icons/Socialicon(2).svg" alt="" />
-            <img src="./assets/icons/Socialicon(1).svg" alt="" />
+            <a href="https://ru.linkedin.com/">
+              <img src="./assets/icons/Socialicon(3).svg" alt="" />
+            </a>
+            <a href="http://facebook.com/">
+              <img src="./assets/icons/Socialicon(2).svg" alt="" />
+            </a>
+            <a href="https://twitter.com/">
+              <img src="./assets/icons/Socialicon(1).svg" alt="" />
+            </a>
           </div>
           <div class="footer_bottom_info">            
-              <p>© 2023 Positivus. All Rights Reserved.</p>           
+              <p>© <span id="date"></span> Positivus. All Rights Reserved.</p>           
               <p class="footer_bottom_info_decoration">Privacy Policy</p>            
           </div>
         </div>       
-      </section>
+      </footer>
      
   
     
