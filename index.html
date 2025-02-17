@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./glide.core.min.css">
+    <link rel="stylesheet" href="./glide.theme.min.css">
     <link
       rel="stylesheet"
       type="text/css"
@@ -784,11 +786,107 @@
           </div>
         </div>       
       </footer>
-     
-  
-    
+      
+      <div class="container1">
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <div class="testimonials_card">
+                <div class="testimonials_content">
+                  <p class="testimonials_text">
+                    "We have been working with Positivus for the past year and
+                    have seen a significant increase in website traffic and leads
+                    as a result of their efforts. The team is professional,
+                    responsive, and truly cares about the success of our business.
+                    We highly recommend Positivus to any company looking to grow
+                    their online presence."
+                  </p>
+                </div>
+                <div class="testimonials_author">
+                  <h4 class="link_color_green">John Smith</h4>
+                  <p class="link_color_white">Marketing Director at XYZ Corp</p>
+                </div>
+              </div>
+                
+              <div class="testimonials_card">
+                <div class="testimonials_content">
+                  <p class="testimonials_text">
+                    "We have been working with Positivus for the past year and
+                    have seen a significant increase in website traffic and leads
+                    as a result of their efforts. The team is professional,
+                    responsive, and truly cares about the success of our business.
+                    We highly recommend Positivus to any company looking to grow
+                    their online presence."
+                  </p>
+                </div>
+                <div class="testimonials_author">
+                  <h4 class="link_color_green">Brian Williams</h4>
+                  <p class="link_color_white">Marketing Director at XYZ Corp</p>
+                </div>
+              </div>
+
+               <div class="testimonials_card">
+              <div class="testimonials_content">
+                <p class="testimonials_text">
+                  "We have been working with Positivus for the past year and
+                  have seen a significant increase in website traffic and leads
+                  as a result of their efforts. The team is professional,
+                  responsive, and truly cares about the success of our business.
+                  We highly recommend Positivus to any company looking to grow
+                  their online presence."
+                </p>
+              </div>
+              <div class="testimonials_author">
+                <h4 class="link_color_green">Emily Johnson</h4>
+                <p class="link_color_white">Marketing Director at XYZ Corp</p>
+              </div>
+            </div>
+            
+            </ul>
+        </div>        
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0">
+            <svg id="vector" viewBox="0 0 14 14"  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.0099 2.05941L14 0L11.9604 7.0099L14 14L7.0099 11.9604L0 14L2.05941 7.0099L0 0L7.0099 2.05941Z" />
+              </svg>
+          </button>
+          <button class="glide__bullet" data-glide-dir="=1">
+            <svg id="vector" viewBox="0 0 14 14"  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.0099 2.05941L14 0L11.9604 7.0099L14 14L7.0099 11.9604L0 14L2.05941 7.0099L0 0L7.0099 2.05941Z" />
+              </svg>
+          </button>
+          <button class="glide__bullet" data-glide-dir="=2">
+            <svg id="vector" viewBox="0 0 14 14"  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.0099 2.05941L14 0L11.9604 7.0099L14 14L7.0099 11.9604L0 14L2.05941 7.0099L0 0L7.0099 2.05941Z" />
+              </svg>
+          </button>
+      </div>
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+          <img src="/assets/icons/arrowright.svg" alt="left">
+        </button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+          <img src="/assets/icons/arrowright.svg" alt="Next">
+        </button>
+    </div>
+    </div>
+  </div>      
+
     <script src="jquery.min.js"></script>
     <script type="text/javascript" src="slick.min.js"></script>  
+    <script src="./glide.min.js"></script>
     <script src="script.js"></script>
+    
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const glide = new Glide('.glide', {
+              focusAt: 'center',
+              perView: 1,
+              gap: 20,
+              loop: true,
+          }).mount();
+      });
+  </script>
   </body>
 </html>

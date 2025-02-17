@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Space Grotesk";
   src: url("/assets/fonts/SpaceGrotesk-Regular.ttf");
@@ -1017,7 +1018,6 @@ p {
 }
 .testimonials_content {
   position: relative;
-  min-width: 60.6rem;
   border: 1px solid #b9ff66;
   padding: 3.89rem;
   border-radius: 4.5rem;
@@ -1532,6 +1532,94 @@ p {
     text-decoration: underline;
     text-underline-offset: 3px;
   }
+}
+
+.glide {
+  width: 70%;
+  margin: auto;
+  height: 50rem;
+}
+
+.container1 {
+  background-color: #191a23;
+  width: 100%;
+  overflow: hidden;
+}
+
+.glide--swipeable {
+  height: 50rem;
+}
+
+.glide__arrows {
+  position: absolute;
+  bottom: 4rem;
+}
+
+.glide__slides {
+  display: flex;
+  transition: transform 0.5s ease;
+  white-space: normal;
+}
+
+.glide__track {
+  overflow: visible;
+}
+
+.glide__slide {
+  width: 500px;
+  margin: 0 10px;
+  transition: opacity 0.3s;
+}
+
+.glide__arrow img {
+  width: 24px;
+  height: 24px;
+}
+
+.glide__arrow--left {
+  margin: 0 9rem;
+  border: none;
+  box-shadow: none;
+  transform: scale(-1);
+  padding-bottom: 0;
+}
+
+.glide__arrow--right {
+  margin: 0 9rem;
+  padding-top: 1rem;
+  border: none;
+  box-shadow: none;
+}
+
+.glide__arrow--right img {
+  margin-top: 3.2rem;
+}
+
+.glide__bullets {
+  bottom: 10px;
+}
+
+.glide__bullet {
+  width: 3rem;
+  height: 3rem;
+  color: white;
+}
+
+.glide__bullets button {
+  background: none;
+  border: none;
+  outline: none; /* Убираем обводку при фокусе */
+  box-shadow: none;
+}
+
+.glide__bullets button.glide__bullet--active {
+  color: #b9ff66;
+}
+
+.glide__bullets button:hover,
+.glide__bullets button:focus {
+  background-color: transparent;
+  border: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
