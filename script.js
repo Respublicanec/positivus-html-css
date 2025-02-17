@@ -56,35 +56,21 @@ document.getElementById("team-all").addEventListener("click", () => {
   });
 });
 
-$(document).ready(function () {
-  $(".testimonials_top-block").slick({
-    dots: true,
-    appendDots: $(".dots-container"),
-    speed: 300,
-    centerMode: true,
-    centerPadding: "287px",
-    adaptiveHeight: true,
-    nextArrow: $(".slick-next"),
-    prevArrow: $(".slick-prev"),
-    customPaging: function (slider, i) {
-      return `
-        <div class="dot-icon" data-index="${i}">
-          <svg id="vector" viewBox="0 0 14 14"  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.0099 2.05941L14 0L11.9604 7.0099L14 14L7.0099 11.9604L0 14L2.05941 7.0099L0 0L7.0099 2.05941Z" />
-</svg>
-        </div>`;
-    },
-    responsive: [
-      {
-        breakpoint: 1300,
-        settings: {
-          centerPadding: "0%",
-        },
-      },
-    ],
-  });
-});
-
 const date = new Date().getFullYear();
 
 document.getElementById("date").textContent = date;
+
+document.addEventListener("DOMContentLoaded", function () {
+  const glide = new Glide(".glide", {
+    type: "carousel",
+    focusAt: "center",
+    perView: 2,
+    gap: 90,
+    rewind: false,
+    breakpoints: {
+      1300: {
+        perView: 1,
+      },
+    },
+  }).mount();
+});

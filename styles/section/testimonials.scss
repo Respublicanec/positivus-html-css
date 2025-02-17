@@ -1,57 +1,33 @@
 .testimonials {
-  &_container {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    width: 100%;
-    border-radius: 4.5rem;
-    margin-left: 0.6rem;
+  border-radius: 4.5rem;
+  margin-left: 0.8rem;
+  background-color: $color-dark;
+  width: 100%;
+  overflow: hidden;
 
-    @media all and (max-width: $media-m) {
-      margin-top: 2.2rem;
-    }
-  }
-
-  &_top-block {
-    display: flex;
-    width: 100%;
-    background-color: $color-dark;
-    overflow: hidden;
-
-    @media all and (max-width: $media-m) {
-      max-height: 43.5rem;
-    }
-  }
-
-  &_lower-block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $color-dark;
-    padding: 7.5rem 7rem 4rem 4rem;
-
-    @media all and (max-width: $media-m) {
-      padding: 2.5rem 0 2.5rem 0;
-    }
+  @media all and (max-width: $media-m) {
+    margin-left: 0;
+    margin-top: 2rem;
   }
 
   &_card {
-    padding: 7.4rem 4rem 0rem 2.5rem;
+    padding: 7.5rem 0;
+    margin: 0;
 
     @media all and (max-width: $media-m) {
-      padding: 3rem 3rem 0rem 3rem;
-      width: 100px;
+      padding: 3.2rem 3rem;
     }
   }
 
   &_content {
+    width: 60.5rem;
     position: relative;
     border: 1px solid $color-green;
-    padding: 3.89rem;
+    padding: 3.9rem;
     border-radius: 4.5rem;
 
     @media all and (max-width: $media-m) {
-      min-width: auto;
+      width: auto;
       padding: 1.9rem;
       line-height: 1.5;
       border-radius: 4rem;
