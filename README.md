@@ -8,3 +8,4 @@
 
 Запускаем компилятор sass введя команду в терминал:
 sass --watch styles/index.scss:styles.css
+sass --watch styles/index.scss:assets/css/styles.css
