@@ -7,4 +7,4 @@
 Запуск через виртуальный сервер (расширение Live Server)
 
 Запускаем компилятор sass введя команду в терминал:
-sass --watch assets/styles/index.scss:/css/styles.css
+sass --watch assets/styles/index.scss:css/styles.css

@@ -149,11 +149,7 @@ p {
   gap: 3rem;
   align-items: center;
   margin-left: auto;
-}
-@media all and (min-width: 1300px) {
-  .nav {
-    transform: none !important;
-  }
+  transform: "translateX(100%)";
 }
 @media all and (max-width: 1300px) {
   .nav {

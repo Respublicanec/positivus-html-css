@@ -5,6 +5,10 @@
   align-items: center;
   margin-left: auto;
 
+  @media all and (min-width: $media-m) {
+    transform: none !important;
+  }
+
   @media all and (max-width: $media-m) {
     position: fixed;
     right: 0;
