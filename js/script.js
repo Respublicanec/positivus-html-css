@@ -37,7 +37,11 @@ document.querySelector(".link_close_button").addEventListener("click", () => {
 
 document.querySelectorAll(".nav__link").forEach((link) => {
   link.addEventListener("click", () => {
-    document.getElementById("nav-header").style.transform = "translateX(100%)";
+    let navHeader = document.getElementById("nav-header");
+    if (navHeader.style.transform === "none") {
+      document.getElementById("nav-header").style.transform =
+        "translateX(100%)";
+    }
   });
 });
 
@@ -56,12 +60,10 @@ document.getElementById("team-all").addEventListener("click", () => {
   });
 });
 
-const date = new Date().getFullYear();
-
-document.getElementById("date").textContent = date;
+document.getElementById("date").textContent = new Date().getFullYear();
 
 document.addEventListener("DOMContentLoaded", function () {
-  const glide = new Glide(".glide", {
+  new Glide(".glide", {
     type: "carousel",
     focusAt: "center",
     perView: 2,

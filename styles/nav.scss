@@ -34,6 +34,10 @@
     text-decoration: none;
     color: black;
     flex-shrink: 0;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   &__link-White {

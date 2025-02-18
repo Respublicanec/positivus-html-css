@@ -10,5 +10,10 @@
 
   &__icon {
     width: 3.2rem;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }
